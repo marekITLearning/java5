@@ -1,0 +1,121 @@
+<!doctype html>
+
+<html>
+<head>
+<title>User Catalog</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- flags -->
+<link rel="stylesheet" href="/css/flags.min.css">
+
+<!-- jquery -->
+<script src="/javascript/jquery-3.2.1.min.js"></script>
+
+<!-- materialize -->
+<link rel="stylesheet" href="/css/materialize.min.css">
+<link href="/css/material-icons.css" rel="stylesheet">
+<script src="/javascript/materialize.min.js"></script>
+
+<!-- sweet alert -->
+<script src="/javascript/sweetalert2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/sweetalert2.min.css">
+
+<script type="text/javascript">
+	function getCookie(cname) {
+		var name = cname + "=";
+		var decodedCookie = decodeURIComponent(document.cookie);
+		var ca = decodedCookie.split(';');
+		for (var i = 0; i < ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0) == ' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+</script>
+</head>
+
+<body>
+	<div class="valign-wrapper row login-box" style="margin-top: 3rem;">
+		<div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
+			<div class='btn green modal-trigger waves-effect waves-light right'
+				href='#modalLang'
+				style="padding: 0; margin-top: .5rem; width: 6rem; height: 4rem;">
+				<div id="flgdiv" href='#modalLang' class="flag"
+					style="height: 4rem; margin-top: -0.2rem;"></div>
+				<script>
+					$("#flgdiv").addClass("flag-" + getCookie("language"));
+				</script>
+			</div>
+			<form method="post" action="Login">
+				<div class="card-content">
+					<span class="card-title">%$login.title$%</span>
+					<div class="row">
+						<div class="input-field col s12">
+							<label for="email">%$login.email$%</label> <input type="email"
+								class="validate" name="email" id="email" />
+						</div>
+						<div class="input-field col s12">
+							<label for="password">%$login.password$%</label> <input
+								type="password" class="validate" name="password" id="password" />
+						</div>
+					</div>
+				</div>
+				<div class="card-action right-align">
+					<input type="reset" id="reset"
+						class="btn-flat grey-text waves-effect">
+					<input
+						type="submit" class="btn green waves-effect waves-light" value="Login">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="modalLang" class="modal">
+		<div class="modal-content">
+			<div>
+				<div class="row center">
+					<div class="col s12 m6 offset-m3 l6 offset-l3">
+						<a href=""
+							onclick="document.cookie = 'language=sk; path=/'"
+							class="z-depth-1 btn white waves-effect waves-dark left"
+							style="width: 90px; height: 80px; padding: 10px; margin-right: 2rem;"
+							onclick="$('#modalLang').modal('close');">
+							<div class="flag flag-sk" style="margin-top: -.2rem;"></div>
+						</a>
+						<div style="margin-top: 2rem;">%$dictionary.slovak$%</div>
+					</div>
+				</div>
+				<div class="row center">
+					<div class="col s12 m6 offset-m3 l6 offset-l3">
+						<a href=""
+							onclick="document.cookie = 'language=en; path=/'"
+							class="z-depth-1 btn white waves-effect waves-dark left"
+							style="width: 90px; height: 80px; padding: 10px; margin-right: 2rem;"
+							onclick="$('#modalLang').modal('close');">
+							<div class="flag flag-en" style="margin-top: -.2rem;"></div>
+						</a>
+						<div style="margin-top: 2rem;">%$dictionary.english$%</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$('.modal').modal();
+
+		$(function() {
+			if (getCookie("language") === "") {
+				document.cookie = 'language=en; path=/'
+				$("#flgdiv").addClass("flag-" + getCookie("language"));
+			}
+		});
+	</script>
+</body>
+</html>
