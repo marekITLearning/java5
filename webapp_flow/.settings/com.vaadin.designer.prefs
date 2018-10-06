@@ -1,0 +1,6 @@
+alwaysUseUtf8=true
+defaultJavaCompanionFolder=src/main/java/sk/itlearning/java5/flow
+defaultTemplateFolder=src/main/webapp/frontend/src
+eclipse.preferences.version=1
+serverAddress=192.168.17.89
+serverPort=53603

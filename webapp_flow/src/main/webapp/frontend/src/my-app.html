@@ -1,0 +1,55 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
+
+<link rel="import" href="../bower_components/vaadin-grid/src/vaadin-grid.html">
+
+<link rel="import" href="../bower_components/vaadin-grid/src/vaadin-grid-column.html">
+
+
+
+<dom-module id="my-app">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+            }
+            
+            .withPaddin {
+            	width:100%;
+            	height:100%
+            	margin:2em;
+            }
+        </style>
+
+
+	<vaadin-vertical-layout class="withPaddin">
+		<h1>[[client.name]]</h1>
+		
+		<vaadin-grid id="grid" items="[[clients]]">
+			<vaadin-grid-column>
+				<template class="header">Name</template>
+				<template>[[item.name]]</template>
+			</vaadin-grid-column>
+		</vaadin-grid>
+		
+		<paper-button raised on-click="onClick">Click</paper-button>
+	</vaadin-vertical-layout>
+	
+    </template>
+
+    <script>
+        class MyApp extends Polymer.Element {
+            static get is() {
+                return 'my-app';
+            }
+
+            static get properties() {
+                return {
+                    // Declare your properties here.
+                };
+            }
+        }
+        customElements.define(MyApp.is, MyApp);
+    </script>
+</dom-module>
