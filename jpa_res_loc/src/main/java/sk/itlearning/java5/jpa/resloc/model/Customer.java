@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "customer", schema="public")
+@Table(name = "client", schema="java5")
 public class Customer {
 
 	@Id
