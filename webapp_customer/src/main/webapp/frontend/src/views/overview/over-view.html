@@ -1,0 +1,67 @@
+<link rel="import" href="../../../bower_components/polymer/polymer.html">
+
+<link rel="import" href="../../../bower_components/vaadin-icons/vaadin-icons.html">
+<link rel="import" href="../../../bower_components/vaadin-ordered-layout/src/vaadin-vertical-layout.html">
+<link rel="import" href="../../../bower_components/vaadin-ordered-layout/src/vaadin-horizontal-layout.html">
+
+<link rel="import" href="../../../bower_components/vaadin-text-field/src/vaadin-text-field.html">
+
+<dom-module id="over-view">
+    <template>
+        <style include="shared-styles">
+            :host {
+                display: block;
+                margin: .7em;
+            }
+
+            .subTitle {
+                line-height: 1.4em;
+                font-size: 1.4em;
+                font-weight: 500;
+                color: var(--app-color-35);
+            }
+
+            #dynamicContent {
+                width: 100%;
+                background-color: var(--app-color-90);
+                min-height: 7em;
+            }
+
+            .padding {
+                padding: 0.7em;
+
+            }
+
+            .stdem {
+                min-width: 15em;
+            }
+        </style>
+
+        <div id="stepTitle" class="subTitle">
+            [[overview.header.text]]
+        </div>
+
+        <div id="dynamicContent">
+            <vaadin-form-layout class="padding">
+                <vaadin-text-field id="textOverview" on-input="textOverviewChanged">
+                </vaadin-text-field>
+            </vaadin-form-layout>
+        </div>
+
+    </template>
+
+    <script>
+        class OverView extends Polymer.Element {
+            static get is() {
+                return 'over-view';
+            }
+
+            static get properties() {
+                return {
+                    // Declare your properties here.
+                };
+            }
+        }
+        customElements.define(OverView.is, OverView);
+    </script>
+</dom-module>

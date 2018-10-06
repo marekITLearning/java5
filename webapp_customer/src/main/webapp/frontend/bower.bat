@@ -1,0 +1,1 @@
+bower install --save Collaborne/paper-stepper

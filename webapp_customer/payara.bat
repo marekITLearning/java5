@@ -1,0 +1,1 @@
+c:\devel\jdk8172\bin\java.exe -jar C:\devel\payara5-micro\payara-micro-5.182.jar --deploy target\webapp_customer.war --port 8084

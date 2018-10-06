@@ -11,8 +11,10 @@
 	<name>workspace parent</name>
 
   <modules>
-    <module>jpa_res_loc</module>
+    <module>jpa_res</module>
+	<module>jpa_jta</module>
 	<module>webapp_flow</module>
+	<module>webapp_customer</module>
   </modules>
 
 </project>
