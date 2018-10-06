@@ -12,6 +12,7 @@
 
   <modules>
     <module>jpa_res_loc</module>
+	<module>webapp_flow</module>
   </modules>
 
 </project>
