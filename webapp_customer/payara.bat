@@ -1,1 +1,1 @@
-c:\devel\jdk8172\bin\java.exe -jar C:\devel\payara5-micro\payara-micro-5.182.jar --deploy target\webapp_customer.war --port 8084
+c:\devel\jdk8\bin\java.exe -agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8000 -jar C:\devel\payara-micro-5.183.jar --deploy target\webapp_customer.war --port 8084

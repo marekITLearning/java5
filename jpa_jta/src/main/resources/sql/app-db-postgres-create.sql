@@ -7,4 +7,5 @@ CREATE DATABASE customer
     LC_COLLATE = 'Slovak_Slovakia.1250'
     LC_CTYPE = 'Slovak_Slovakia.1250'
     TABLESPACE = pg_default
-    CONNECTION LIMIT = -1;
+    CONNECTION LIMIT = -1
+    TEMPLATE template0;

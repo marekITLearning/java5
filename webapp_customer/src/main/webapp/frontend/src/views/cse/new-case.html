@@ -10,8 +10,6 @@
 <link rel="import" href="../../../bower_components/vaadin-grid/src/vaadin-grid-column.html">
 <link rel="import" href="../../../bower_components/vaadin-split-layout/src/vaadin-split-layout.html">
 
-<link rel="import" href="../../../bower_components/paper-stepper/paper-stepper.html">
-
 <dom-module id="new-case">
     <template>
         <style include="shared-styles">
@@ -76,62 +74,12 @@
 
         <vaadin-vertical-layout style="width: 100%; height: 100%;">
 
-            <paper-button id="btnNewInvestigation" on-click="newInvestigation">
-                Start New Investigation
-            </paper-button>
-
-            <div id="stepTitle" class="subTitle">
-                [[oeCase.currentStepName]]
-            </div>
+			<paper-icon-button id="btnNewCustomer" icon="vaadin:check" on-click="saveNewCustomer">
+				Save New Customer
+			</paper-icon-button>
 
             <div id="dynamicContent" class="hidden">
             </div>
-
-            <paper-stepper id="caseStepper" class="hidden" progress-bar on-selected-changed="nextOrBackStep">
-            </paper-stepper>
-
-            <vaadin-grid id="caseStepsGrid" items="[[oeCase.steps]]" height-by-rows>
-                <vaadin-grid-column>
-                    <template class="header">
-                        Id
-                    </template>
-                    <template>
-                        [[item.ordNr]]
-                    </template>
-                </vaadin-grid-column>
-                <vaadin-grid-column>
-                    <template class="header">
-                        Name
-                    </template>
-                    <template>
-                        [[item.name]]
-                    </template>
-                </vaadin-grid-column>
-                <vaadin-grid-column>
-                    <template class="header">
-                        Data
-                    </template>
-                    <template>
-                        [[item.jsonData]]
-                    </template>
-                </vaadin-grid-column>
-                <vaadin-grid-column>
-                    <template class="header">
-                        Status
-                    </template>
-                    <template>
-                        [[item.status]]
-                    </template>
-                </vaadin-grid-column>
-                <vaadin-grid-column>
-                    <template class="header">
-                        Actions
-                    </template>
-                    <template>
-                        <paper-icon-button icon="vaadin:edit"></paper-icon-button>
-                    </template>
-                </vaadin-grid-column>
-            </vaadin-grid>
 
         </vaadin-vertical-layout>
     </template>

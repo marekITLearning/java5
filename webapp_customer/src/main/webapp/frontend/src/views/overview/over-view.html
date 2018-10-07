@@ -6,6 +6,17 @@
 
 <link rel="import" href="../../../bower_components/vaadin-text-field/src/vaadin-text-field.html">
 
+<link rel="import" href="../../../bower_components/vaadin-icons/vaadin-icons.html">
+<link rel="import" href="../../../bower_components/vaadin-ordered-layout/src/vaadin-vertical-layout.html">
+<link rel="import" href="../../../bower_components/vaadin-ordered-layout/src/vaadin-horizontal-layout.html">
+
+<link rel="import" href="../../../bower_components/vaadin-form-layout/src/vaadin-form-layout.html">
+<link rel="import" href="../../../bower_components/vaadin-form-layout/src/vaadin-form-item.html">
+<link rel="import" href="../../../bower_components/vaadin-grid/src/vaadin-grid.html">
+<link rel="import" href="../../../bower_components/vaadin-grid/src/vaadin-grid-column.html">
+<link rel="import" href="../../../bower_components/vaadin-split-layout/src/vaadin-split-layout.html">
+
+
 <dom-module id="over-view">
     <template>
         <style include="shared-styles">
@@ -37,16 +48,32 @@
             }
         </style>
 
-        <div id="stepTitle" class="subTitle">
-            [[overview.header.text]]
-        </div>
-
-        <div id="dynamicContent">
-            <vaadin-form-layout class="padding">
-                <vaadin-text-field id="textOverview" on-input="textOverviewChanged">
-                </vaadin-text-field>
-            </vaadin-form-layout>
-        </div>
+             <vaadin-grid id="grid" items="[[customers]]" height-by-rows>
+                <vaadin-grid-column>
+                    <template class="header">
+                        Id
+                    </template>
+                    <template>
+                        [[item.id]]
+                    </template>
+                </vaadin-grid-column>
+                <vaadin-grid-column>
+                    <template class="header">
+                        Name
+                    </template>
+                    <template>
+                        [[item.customerName]]
+                    </template>
+                </vaadin-grid-column>
+                <vaadin-grid-column>
+                    <template class="header">
+                        Actions
+                    </template>
+                    <template>
+                        <paper-icon-button icon="vaadin:edit" on-click="deleteItem"></paper-icon-button>
+                    </template>
+                </vaadin-grid-column>
+            </vaadin-grid>
 
     </template>
 

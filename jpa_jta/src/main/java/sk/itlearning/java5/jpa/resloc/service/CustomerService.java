@@ -31,5 +31,19 @@ public class CustomerService {
 		entity.setLastModified(new Date());
 		em.persist(entity);	
 	}
+
+	public void delete(Customer entity) {
+		Customer c = read(entity.getId());
+		em.remove(c);
+//		if (!em.contains(entity)) {
+//			entity = em.merge(entity);
+//		}
+//		em.remove(entity);
+		em.flush();
+	}
 	
+	public Customer read(long id) {
+		return em.find(Customer.class, id);
+	}
+
 }
