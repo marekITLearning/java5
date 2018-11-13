@@ -13,8 +13,10 @@
   <modules>
     <module>jpa_res</module>
 	<module>jpa_jta</module>
-	<module>webapp_flow</module>
+	<module>ui-vaadin-flow</module>
 	<module>webapp_customer</module>
+	<module>webapp_flow</module>
+	<module>webapp_rest</module>
   </modules>
 
 </project>
