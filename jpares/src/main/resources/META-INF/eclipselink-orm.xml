@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.4"
+	xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/orm"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.eclipse.org/eclipselink/xsds/persistence/orm
+https://www.eclipse.org/eclipselink/xsds/eclipselink_orm_2_4.xsd">
+
+	<entity class="sk.itlearning.java5.jpa.model.Customer">
+		<attributes>
+			<id name="id" attribute-type="long">
+				<generated-value strategy="IDENTITY" />
+			</id>
+			<basic name="firstName" attribute-type="java.lang.String">
+				<column nullable="false" />
+			</basic>
+			<basic name="lastName" attribute-type="java.lang.String">
+				<column nullable="false" />
+			</basic>
+			<basic name="status" attribute-type="java.lang.String">
+				<column nullable="false" />
+			</basic>
+			<basic name="lastModified" attribute-type="java.util.Date">
+				<column nullable="false" />
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<version name="version" />
+		</attributes>
+	</entity>
+</entity-mappings>
