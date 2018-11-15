@@ -11,13 +11,12 @@
 	<name>workspace parent</name>
 
   <modules>
-    <module>jpa_res</module>
-	<module>jpa_jta</module>
+	<module>jpa_template</module>
+	<module>jpajta</module>
 	<module>jpares</module>
+	<module>restapi</module>
 	<module>ui-vaadin-flow</module>
-	<module>webapp_customer</module>
-	<module>webapp_flow</module>
-	<module>webapp_rest</module>
+	<module>ui-vaadin-web</module>
   </modules>
 
 </project>
