@@ -12,6 +12,8 @@ import sk.itlearning.java5.jpa.model.CustomerService;
 
 public class CustomerForm extends FormLayout {
 
+	private static final long serialVersionUID = 1L;
+
 	private TextField firstName = new TextField("First name");
 	private TextField lastName = new TextField("Last name");
 	private ComboBox<String> status = new ComboBox<>("Status");
@@ -20,6 +22,7 @@ public class CustomerForm extends FormLayout {
 	private MainView mainView;
 	private Button save = new Button("Save");
 	private Button delete = new Button("Delete");
+	private Button transactionTest = new Button("Transaction Test");
 	private Binder<Customer> binder = new Binder<>(Customer.class);
 
 	public CustomerForm(MainView mainView) {
@@ -27,15 +30,29 @@ public class CustomerForm extends FormLayout {
 		add(firstName, lastName, status);
 		status.setItems("Active", "Retired");
 		binder.bindInstanceFields(this);
-		HorizontalLayout buttons = new HorizontalLayout(save, delete);
+		HorizontalLayout buttons = new HorizontalLayout(save, delete, transactionTest);
 		add(firstName, lastName, status, buttons);
 		save.getElement().setAttribute("theme", "primary");
 		setCustomer(null);
 		save.addClickListener(e -> this.save());
 		delete.addClickListener(e -> this.delete());
-//		binder.forField(firstName).asRequired().bind(Customer::getFirstName, Customer::setFirstName);
-//		binder.forField(lastName).asRequired().bind(Customer::getLastName, Customer::setLastName);
-//		binder.forField(status).asRequired().bind(Customer::getStatus, Customer::setStatus);
+		transactionTest.addClickListener(e -> this.testTransaction());
+		binder.forField(firstName).asRequired().bind(Customer::getFirstName, Customer::setFirstName);
+		binder.forField(lastName).asRequired().bind(Customer::getLastName, Customer::setLastName);
+		binder.forField(status).asRequired().bind(Customer::getStatus, Customer::setStatus);
+	}
+
+	private void testTransaction() {
+		Customer c1 = new Customer();
+		c1.setFirstName("1");
+		c1.setLastName("Test");
+		c1.setStatus("Active");
+		service.create(c1);
+		
+		Customer c2 = new Customer();
+		c2.setFirstName("1");
+		c2.setLastName("Test");
+		service.create(c2);
 	}
 
 	public void setCustomer(Customer customer) {
@@ -56,7 +73,7 @@ public class CustomerForm extends FormLayout {
 	}
 
 	private void save() {
-//		if (!binder.validate().hasErrors()) {
+		if (!binder.validate().hasErrors()) {
 			Customer dbCustomer = service.find(customer);
 			if (dbCustomer == null) {
 				service.create(customer);
@@ -65,7 +82,7 @@ public class CustomerForm extends FormLayout {
 			}
 			mainView.updateList();
 			setCustomer(null);
-//		}
+		}
 	}
 	
 }

@@ -66,18 +66,18 @@ public class CustomerService {
 		CriteriaQuery<Customer> q = cb.createQuery(Customer.class);
 		Root<Customer> root = q.from(Customer.class);
 		List<Predicate> conditions = new ArrayList<>();
-		if (nameSubstring != null && !nameSubstring.isEmpty()) {
-			conditions.add(cb.or(
-					cb.like(root.get("firstName"), "%" + nameSubstring + "%"),
-					cb.like(root.get("lastName"), "%" + nameSubstring + "%")));
-		}
 //		if (nameSubstring != null && !nameSubstring.isEmpty()) {
 //			conditions.add(cb.or(
-//					cb.like(cb.upper(root.get("firstName")), "%" + nameSubstring.toUpperCase() + "%"),
-//					cb.like(cb.upper(root.get("lastName")), "%" + nameSubstring.toUpperCase() + "%")));
+//					cb.like(root.get("firstName"), "%" + nameSubstring + "%"),
+//					cb.like(root.get("lastName"), "%" + nameSubstring + "%")));
 //		}
+		if (nameSubstring != null && !nameSubstring.isEmpty()) {
+			conditions.add(cb.or(
+					cb.like(cb.upper(root.get("firstName")), "%" + nameSubstring.toUpperCase() + "%"),
+					cb.like(cb.upper(root.get("lastName")), "%" + nameSubstring.toUpperCase() + "%")));
+		}
 		q.select(root).where(conditions.toArray(new Predicate[] {}));
-//		q.orderBy(cb.asc(root.get("firstName")));
+		q.orderBy(cb.asc(root.get("firstName")));
 		List<Customer> result = em.createQuery(q).getResultList();
 		return result;
 	}

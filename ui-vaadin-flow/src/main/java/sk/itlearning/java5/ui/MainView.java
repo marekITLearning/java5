@@ -21,7 +21,9 @@ import sk.itlearning.java5.jpa.model.CustomerService;
 @Route("")
 public class MainView extends VerticalLayout {
 	
-    private CustomerService service = new CustomerService();
+	private static final long serialVersionUID = 1L;
+	
+	private CustomerService service = new CustomerService();
     private Grid<Customer> grid = new Grid<>();
     private TextField filterText = new TextField();
     private CustomerForm form = new CustomerForm(this);
