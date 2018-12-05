@@ -1,1 +1,0 @@
-c:\devel\jdk8\bin\java.exe -jar C:\devel\payara-micro-5.183.jar --deploy target\restwebapp.war --port 8082
