@@ -39,7 +39,8 @@ public class CustomerService {
 		}
 	}
 
-	public void delete(Customer customer) {
+	public void delete(long id) {
+		Customer customer = find(id);
 		if (!em.contains((Customer) customer)) {
 			customer = em.merge((Customer) customer);
 		}
@@ -66,9 +67,9 @@ public class CustomerService {
 		List<Customer> result = em.createQuery(q).getResultList();
 		return result;
 	}
-	
-	public Customer find(Customer customer) {
-		return em.find(Customer.class, customer.getId());
+
+	public Customer find(long id) {
+		return em.find(Customer.class, id);
 	}
 
 }
