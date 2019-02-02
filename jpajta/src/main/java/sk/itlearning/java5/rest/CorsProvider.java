@@ -9,13 +9,16 @@ import javax.ws.rs.ext.Provider;
 
 @Provider
 public class CorsProvider implements ContainerResponseFilter {
-	
+
+	public static final String ALLOWED_METHODS = "";
+
 	@Override
 	public void filter(ContainerRequestContext requestContext, ContainerResponseContext responseContext) throws IOException {
 		responseContext.getHeaders().putSingle("Access-Control-Allow-Origin", "*");
+		responseContext.getHeaders().putSingle("Access-Control-Allow-Methods", "*");
+		responseContext.getHeaders().putSingle("Access-Control-Allow-Headers", "origin, content-type, accept, authorization");
 		responseContext.getHeaders().putSingle("Access-Control-Allow-Credentials", "true");
-		responseContext.getHeaders().putSingle("Access-Control-Allow-Methods", "GET, POST, DELETE, PUT");
-		responseContext.getHeaders().putSingle("Access-Control-Allow-Headers", "Content-Type, Accept");
+		responseContext.getHeaders().putSingle("content-type", "application/json; charset=utf-8");
 	}
 
 }
