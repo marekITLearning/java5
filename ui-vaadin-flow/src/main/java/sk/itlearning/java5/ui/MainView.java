@@ -1,6 +1,8 @@
 package sk.itlearning.java5.ui;
 
-import java.util.List;
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.grid.Grid;
@@ -15,22 +17,25 @@ import com.vaadin.flow.router.Route;
 import sk.itlearning.java5.jpa.model.Customer;
 import sk.itlearning.java5.jpa.model.CustomerService;
 
-/**
- * The main view contains a button and a click listener.
- */
 @Route("")
 public class MainView extends VerticalLayout {
-	
-	private static final long serialVersionUID = 1L;
-	
-	private CustomerService service = new CustomerService();
+
+    private CustomerService service = null;
+    
+    
     private Grid<Customer> grid = new Grid<>();
     private TextField filterText = new TextField();
     private CustomerForm form = new CustomerForm(this);
 
-    List<Customer> data;
-    
     public MainView() {
+    	
+    	try {
+			InitialContext ctx = new InitialContext();
+			service = (CustomerService) ctx.lookup("java:global/ROOT/CustomerService");
+		} catch (NamingException e1) {
+			e1.printStackTrace();
+		}
+    	
         filterText.setPlaceholder("Filter by name...");
         filterText.setValueChangeMode(ValueChangeMode.EAGER);
         filterText.addValueChangeListener(e -> updateList());
@@ -65,9 +70,14 @@ public class MainView extends VerticalLayout {
         grid.asSingleSelect().addValueChangeListener(event -> {
                 form.setCustomer(event.getValue());
         });
+
     }
 
     public void updateList() {
-    	grid.setItems(service.read(filterText.getValue()));
+        /**
+         * Note that filterText.getValue() might return null; in this case, the backend
+         * takes care of it for us
+         */
+        grid.setItems(service.read(filterText.getValue()));
     }
 }
