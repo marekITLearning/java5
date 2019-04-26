@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<title>Example 3</title>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>
+
+<h1>Star Wars heroes and planets</h1>
+
+<my-table
+  columns='{
+    "name": "Name",
+    "gender": "Gender",
+    "birth_year": "Birth year"
+  }'
+  src="https://swapi.co/api/people"
+></my-table>
+
+<my-table
+  columns='{
+    "name": "Name",
+    "climate": "Climate",
+    "terrain": "Terrain"
+  }'
+  src="https://swapi.co/api/planets"
+></my-table>
+
+<template id="my-table">
+  <style>
+    table {
+      width: 90%;
+      margin: 10px auto;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+    }
+  </style>
+
+  <table>
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+</template>
+
+<script>
+  class MyTable extends HTMLElement {
+    constructor () {
+      super()
+
+      const shadow = this.attachShadow({mode: 'open'})
+
+      const columns = JSON.parse(this.getAttribute('columns'))
+      const url = this.getAttribute('src')
+
+      const template = document.querySelector('#my-table')
+      const table = document.importNode(template.content, true)
+      const tableHeader = table.querySelector('thead')
+      const tableBody = table.querySelector('tbody')
+
+      const row = document.createElement('tr')
+
+      Object.keys(columns).forEach(key => {
+        const headerCell = document.createElement('th')
+        headerCell.textContent = columns[key]
+        row.appendChild(headerCell)
+      })
+
+      tableHeader.appendChild(row)
+
+      fetch(url)
+        .then(response => response.json())
+        .then(({ results }) => {
+          results.forEach(result => {
+            const row = document.createElement('tr')
+
+            Object.keys(columns).forEach(key => {
+              const cell = document.createElement('td')
+              cell.textContent = result[key]
+              row.appendChild(cell)
+            })
+
+            tableBody.appendChild(row)
+          })
+        })
+
+      shadow.appendChild(table)
+    }
+  }
+
+  customElements.define('my-table', MyTable)
+</script>
