@@ -12,6 +12,7 @@
 	<name>workspace parent</name>
 
   <modules>
+  	<module>jee_bean</module>
 	<module>jpa_template</module>
 	<module>jpajta</module>
 	<module>jpares</module>
