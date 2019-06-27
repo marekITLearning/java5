@@ -13,10 +13,10 @@
 
   <modules>
   	<module>jee_bean</module>
-	<module>jpa_template</module>
 	<module>jpajta</module>
 	<module>jpares</module>
 	<module>ui-vaadin-flow</module>
+	<module>vaadin-ui</module>
   </modules>
 
 </project>
