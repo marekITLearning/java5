@@ -13,10 +13,11 @@
 
   <modules>
   	<module>jee_bean</module>
-	<module>jpajta</module>
-	<module>jpares</module>
-	<module>ui-vaadin-flow</module>
-	<module>vaadin-ui</module>
+	<module>jpa-jta</module>
+	<module>jpa-res</module>
+	<module>vaadin-ui-jta</module>
+	<module>vaadin-ui-res</module>
+	<module>vue-customer-backend</module>
   </modules>
 
 </project>
