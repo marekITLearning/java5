@@ -2,10 +2,10 @@ package sk.itlearning.java5.javabean;
 
 import javax.annotation.Resource;
 import javax.ejb.Schedule;
-import javax.ejb.Stateful;
+import javax.ejb.Stateless;
 import javax.ejb.TimerService;
 
-@Stateful
+@Stateless
 public class BackendTimer2 {
 	
 	@Resource private TimerService timerService;

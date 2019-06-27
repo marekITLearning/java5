@@ -59,7 +59,7 @@
 
 		<dependency>
 			<groupId>sk.javaschool.java5</groupId>
-			<artifactId>jpares</artifactId>
+			<artifactId>jpajta</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

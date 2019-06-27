@@ -40,9 +40,15 @@ public class CustomerService {
 		return result;
 	}
 
+	public Customer readById(long id) {
+		EntityManager em = emFactory.createEntityManager();
+		return em.find(Customer.class, id);
+	}
+	
 	public void update(Customer customer) {
 		EntityManager em = emFactory.createEntityManager();
 		em.getTransaction().begin();
+//		Customer entity = em.find(Customer.class, customer.getId());
 		customer.setLastModified(new Date());
 		if (!em.contains((Customer) customer)) {
 			em.merge((Customer) customer);

@@ -33,7 +33,7 @@ public class CustomerForm extends FormLayout {
     	
     	try {
 			InitialContext ctx = new InitialContext();
-			service = (CustomerService) ctx.lookup("java:global/ROOT/CustomerService");
+			service = (CustomerService) ctx.lookup("java:global/vaadin-ui/CustomerService");
 		} catch (NamingException e1) {
 			e1.printStackTrace();
 		}
@@ -64,7 +64,7 @@ public class CustomerForm extends FormLayout {
     }
 
     private void delete() {
-        service.delete(customer);
+        service.delete(customer.getId());
         mainView.updateList();
         setCustomer(null);
     }

@@ -31,7 +31,7 @@ public class MainView extends VerticalLayout {
     	
     	try {
 			InitialContext ctx = new InitialContext();
-			service = (CustomerService) ctx.lookup("java:global/ROOT/CustomerService");
+			service = (CustomerService) ctx.lookup("java:global/vaadin-ui/CustomerService");
 		} catch (NamingException e1) {
 			e1.printStackTrace();
 		}
