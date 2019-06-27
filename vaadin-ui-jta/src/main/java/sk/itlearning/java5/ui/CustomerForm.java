@@ -33,7 +33,7 @@ public class CustomerForm extends FormLayout {
     	
     	try {
 			InitialContext ctx = new InitialContext();
-			service = (CustomerService) ctx.lookup("java:global/vaadin-ui/CustomerService");
+			service = (CustomerService) ctx.lookup("java:global/vaadin/CustomerService");
 		} catch (NamingException e1) {
 			e1.printStackTrace();
 		}
@@ -41,7 +41,7 @@ public class CustomerForm extends FormLayout {
         this.mainView = mainView;
         add(firstName, lastName, status);
         
-        status.setItems(Stream.of("new", "lost", "active", "unknown"));
+        status.setItems(Stream.of("new", "lost", "active"));
         
         binder.bindInstanceFields(this);
         HorizontalLayout buttons = new HorizontalLayout(save, delete);

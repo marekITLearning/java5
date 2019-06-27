@@ -4,7 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>sk.itlearning.java5</groupId>
-	<artifactId>ui-vaadin-flow</artifactId>
+	<artifactId>vaadin-ui-jta</artifactId>
 	<name>UI Vaadin Flow</name>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
@@ -59,13 +59,13 @@
 
 		<dependency>
 			<groupId>sk.javaschool.java5</groupId>
-			<artifactId>jpajta</artifactId>
+			<artifactId>jpa-jta</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
 	<build>
-		<finalName>vaadin-ui</finalName>
+		<finalName>vaadin</finalName>
 		<plugins>
 			<!-- Jetty plugin for easy testing without a server -->
 			<plugin>

@@ -29,7 +29,7 @@ public class CustomerForm extends FormLayout {
 	public CustomerForm(MainView mainView) {
 	    this.mainView = mainView;
 	    
-	    status.setItems(new String[] {"new", "old"});
+	    status.setItems(Stream.of("new", "lost", "active"));
 
 	    HorizontalLayout buttons = new HorizontalLayout(save, delete);
 	    save.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
