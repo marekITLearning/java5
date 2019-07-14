@@ -1,5 +1,5 @@
 <template>
-    <v-data-table
+  <v-data-table
     :headers="[
           { text: 'First Name', value: 'fistName' },
           { text: 'Last Name', value: 'lastName' },
@@ -17,11 +17,11 @@
 </template>
 
 <script>
-  export default {
-    props: {
-      polozky: []
-    }
+export default {
+  props: {
+    polozky: []
   }
+}
 </script>
 
 <style>

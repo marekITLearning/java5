@@ -31,13 +31,13 @@ export default {
   },
   data () {
     return {
-      items:[]
+      items: []
     }
   },
-    created () {
-        fetch('http://localhost:8083/restapi/api/customer').then(response => response.json()).then(data => {
-          this.items = JSON.parse(JSON.stringify(data))
-        })      
-    }
+  created () {
+    fetch('http://localhost:8083/restapi/api/customer').then(response => response.json()).then(data => {
+      this.items = JSON.parse(JSON.stringify(data))
+    })
+  }
 }
 </script>
