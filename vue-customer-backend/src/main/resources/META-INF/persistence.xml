@@ -6,7 +6,7 @@
 
 	<persistence-unit name="APP_DB" transaction-type="JTA">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<jta-data-source>java:app/pgds</jta-data-source>
+		<jta-data-source>jdbc/appdb</jta-data-source>
 		<mapping-file>META-INF/eclipselink-orm.xml</mapping-file>
 	</persistence-unit>
 

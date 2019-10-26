@@ -5,13 +5,13 @@
 
 	<persistence-unit name="APP_DB" transaction-type="JTA">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<jta-data-source>java:app/postgresqlds</jta-data-source>
+		<jta-data-source>java:app/appdb</jta-data-source>
 		<mapping-file>META-INF/eclipselink-orm.xml</mapping-file>
 	</persistence-unit>
 
 	<persistence-unit name="APP_DB" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<non-jta-data-source>java:app/postgresqlds</non-jta-data-source>
+		<non-jta-data-source>java:app/appdb</non-jta-data-source>
 		<mapping-file>META-INF/eclipselink-orm.xml</mapping-file>
 	</persistence-unit>
 	

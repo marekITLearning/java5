@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
 
     <data-source>
-        <name>java:app/mysqlds</name>
+        <name>java:app/appdb</name>
         <!-- <class-name>com.mysql.jdbc.jdbc2.optional.MysqlXADataSource</class-name> -->
         <class-name>com.mysql.jdbc.Driver</class-name>
         <url>jdbc:mysql://localhost:3306/customer?useSSL=false</url>
@@ -11,7 +11,7 @@
     </data-source>
 
     <data-source>
-        <name>java:app/postgresqlds</name>
+        <name>java:app/appdb</name>
         <class-name>org.postgresql.Driver</class-name>
         <url>jdbc:postgresql://localhost:5432/customer</url>
         <user>postgres</user>
@@ -19,7 +19,7 @@
     </data-source>
     
     <data-source>
-        <name>java:app/mssqlds</name>
+        <name>java:app/appdb</name>
         <class-name>com.microsoft.sqlserver.jdbc.SQLServerXADataSource</class-name>
         <url>jdbc:sqlserver://localhost:1433;Instance=SQLSERVER;databaseName=customer;</url>
         <user>sa</user>
