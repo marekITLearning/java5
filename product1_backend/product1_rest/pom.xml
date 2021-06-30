@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>sk.itlearning.java5</groupId>
 		<artifactId>product1_backend</artifactId>
@@ -11,46 +11,7 @@
 
 	<artifactId>product1_rest</artifactId>
 
-	<properties>
-		<postgresql.driver.version>42.2.5</postgresql.driver.version>
-		<eclipselink.version>2.7.3</eclipselink.version>
-		<javaee.web.api.version>8.0</javaee.web.api.version>
-		<jdbcDdlRes>src/main/resources/sql</jdbcDdlRes>
-		<jdbcUrlRoot>jdbc:postgresql://localhost:5432/</jdbcUrlRoot>
-		<jdbcDriver>org.postgresql.Driver</jdbcDriver>
-		<jdbcUserRoot>postgres</jdbcUserRoot>
-		<jdbcPasswordRoot>sa</jdbcPasswordRoot>
-		<jdbcUrlDatabase>jdbc:postgresql://localhost:5432/customer</jdbcUrlDatabase>
-		<jdbcDdlCreate>app-db-schema-postgres-create.sql</jdbcDdlCreate>
-		<jdbcDdlDrop>app-db-schema-postgres-create.sql</jdbcDdlDrop>
-		<jdbcDdlMkdb>app-db-postgres-create.sql</jdbcDdlMkdb>
-	</properties>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>sql-maven-plugin</artifactId>
-					<version>1.5</version>
-					<dependencies>
-						<dependency>
-							<groupId>org.postgresql</groupId>
-							<artifactId>postgresql</artifactId>
-							<version>${postgresql.driver.version}</version>
-						</dependency>
-					</dependencies>
-					<configuration>
-						<url>${jdbcUrlRoot}</url>
-						<driver>${jdbcDriver}</driver>
-						<username>${jdbcUserRoot}</username>
-						<password>${jdbcPasswordRoot}</password>
-						<autocommit>true</autocommit>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-	</build>
+	<packaging>war</packaging>
 
 	<dependencies>
 		<dependency>
@@ -60,121 +21,82 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>eclipselink</artifactId>
-			<version>${eclipselink.version}</version>
+			<groupId>sk.itlearning.java5</groupId>
+			<artifactId>product1_pers</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>${postgresql.driver.version}</version>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.5</version>
+		</dependency>
+		<dependency>
+			<groupId>fish.payara.extras</groupId>
+			<artifactId>payara-micro</artifactId>
+			<version>5.2021.2</version>
 		</dependency>
 	</dependencies>
 
-	<profiles>
-		<profile>
-			<id>mkdb</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>sql-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>make_db</id>
-								<phase>generate-resources</phase>
-								<goals>
-									<goal>execute</goal>
-								</goals>
-								<configuration>
-									<onError>continue</onError>
-									<srcFiles>
-										<srcFile>${jdbcDdlRes}/${jdbcDdlMkdb}</srcFile>
-									</srcFiles>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
+	<build>
+		<finalName>restapi</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.zeroturnaround</groupId>
+				<artifactId>jrebel-maven-plugin</artifactId>
+				<version>1.1.10</version>
+				<executions>
+					<execution>
+						<id>generate-rebel-xml</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.2</version>
+			</plugin>
+			<plugin>
+				<groupId>fish.payara.maven.plugins</groupId>
+				<artifactId>payara-micro-maven-plugin</artifactId>
+				<version>1.3.0</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>start</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<artifactItem>
+						<groupId>fish.payara.extras</groupId>
+						<artifactId>payara-micro</artifactId>
+						<version>5.2021.2</version>
+					</artifactItem>
+					<commandLineOptions>
+						<option>
+							<key>--deploy</key>
+							<value>target/restapi.war</value>
+						</option>
+						<option>
+							<key>--port</key>
+							<value>8080</value>
+						</option>
+						<option>
+							<key>--rootDir</key>
+							<value>pmroot</value>
+						</option>
+						<option>
+							<key>--domainConfig</key>
+							<value>domain.xml</value>
+						</option>
+					</commandLineOptions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
-		<profile>
-			<id>gensch</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>us.hornerscorners.mojo</groupId>
-						<artifactId>eclipselink-ddlgeneration-maven-plugin</artifactId>
-						<version>1.8</version>
-						<executions>
-							<execution>
-								<id>gen_schema</id>
-								<phase>process-classes</phase>
-								<goals>
-									<goal>execute</goal>
-								</goals>
-							</execution>
-						</executions>
-						<dependencies>
-							<dependency>
-								<groupId>javax</groupId>
-								<artifactId>javaee-web-api</artifactId>
-								<version>${javaee.web.api.version}</version>
-							</dependency>
-							<dependency>
-								<groupId>org.postgresql</groupId>
-								<artifactId>postgresql</artifactId>
-								<version>${postgresql.driver.version}</version>
-							</dependency>
-							<dependency>
-								<groupId>org.eclipse.persistence</groupId>
-								<artifactId>eclipselink</artifactId>
-								<version>${eclipselink.version}</version>
-							</dependency>
-						</dependencies>
-						<configuration>
-							<jdbcUrl>${jdbcUrlDatabase}</jdbcUrl>
-							<jdbcDriver>${jdbcDriver}</jdbcDriver>
-							<jdbcUser>${jdbcUserRoot}</jdbcUser>
-							<jdbcPassword>${jdbcPasswordRoot}</jdbcPassword>
-							<outputDir>${jdbcDdlRes}</outputDir>
-							<createFilename>${jdbcDdlCreate}</createFilename>
-							<deleteFilename>${jdbcDdlDrop}</deleteFilename>
-							<unitName>DDL_GEN</unitName>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-		<profile>
-			<id>loadsch</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>sql-maven-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>load_schema</id>
-								<phase>generate-resources</phase>
-								<goals>
-									<goal>execute</goal>
-								</goals>
-								<configuration>
-									<onError>continue</onError>
-									<url>${jdbcUrlDatabase}</url>
-									<srcFiles>
-										<srcFile>${jdbcDdlRes}/${jdbcDdlCreate}</srcFile>
-									</srcFiles>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-
-	</profiles>
 </project>
