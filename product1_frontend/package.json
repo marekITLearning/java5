@@ -1,0 +1,52 @@
+{
+  "name": "movie_db",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve --port 8081",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@mdi/font": "^5.5.55",
+    "axios": "^0.21.1",
+    "core-js": "^3.12.1",
+    "locale2": "^2.3.1",
+    "lodash": "^4.17.21",
+    "velocity-animate": "^1.5.2",
+    "vue": "^2.6.12",
+    "vue-cookies": "^1.7.4",
+    "vue-meta": "^2.4.0",
+    "vue-pdf": "^4.2.0",
+    "vue-router": "^3.5.1",
+    "vue-sessionstorage": "^1.0.0",
+    "vuelidate": "^0.7.6",
+    "vuetify": "^2.5.0",
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^2.7.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.2.0",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/compiler-sfc": "^3.0.11",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^4.1.0",
+    "eslint-plugin-vue": "^7.9.0",
+    "vue-i18n": "^8.24.4",
+    "node-sass": "^5.0.0",
+    "sass": "~1.26.10",
+    "sass-loader": "^8.0.0",
+    "vue-cli-plugin-vuetify": "^2.0.7",
+    "vue-template-compiler": "^2.6.12",
+    "vuetify-loader": "^1.6.0"
+  }
+}
