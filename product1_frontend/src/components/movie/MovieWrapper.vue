@@ -38,7 +38,12 @@ export default {
       this.callResult.info = 'Loading data...'
       this.callResult.finished = false
       this.callResult.error = null
-      this.$xapi.get('moviedb/getTop')
+      const params = {}
+      params.page = 3
+      params.pageSize = 10
+      params.order = ['primarytitl']
+      params.asc = false
+      this.$xapi.post('movie', params)
         .then(r => {
           this.movies = r.data
         })

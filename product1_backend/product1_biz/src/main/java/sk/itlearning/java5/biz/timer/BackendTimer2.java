@@ -1,4 +1,4 @@
-package sk.itlearning.java5.biz;
+package sk.itlearning.java5.biz.timer;
 
 import javax.annotation.Resource;
 import javax.ejb.Schedule;
