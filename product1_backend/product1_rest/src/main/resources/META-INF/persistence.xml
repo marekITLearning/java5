@@ -7,6 +7,8 @@
 	<persistence-unit name="APP_DB" transaction-type="JTA">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<jta-data-source>jdbc/appdb</jta-data-source>
+		<class>sk.itlearning.java5.pers.entity.Rating</class>
+		<class>sk.itlearning.java5.pers.entity.Title</class>
 	</persistence-unit>
 
 </persistence>

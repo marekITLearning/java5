@@ -8,7 +8,7 @@ if (process.env.NODE_ENV === 'production') {
 
 if (process.env.NODE_ENV === 'development') {
   config = {
-    api_url: 'http://127.0.0.1:8082/bcapi/rest/'
+    api_url: 'http://localhost:8080/restapi/api'
   }
 }
 

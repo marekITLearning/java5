@@ -10,7 +10,7 @@ public class BackendTimer2 {
 	
 	@Resource private TimerService timerService;
 	
-    @Schedule(hour = "*", minute = "*", second = "*/8", info = "Every 8 seconds timer")
+    @Schedule(hour = "*", minute = "*", second = "*/30", info = "SCHEDULED_TIMER")
     private void doBackendTask2() {
     	System.out.println("Starting the backend task 2 ...");
     }

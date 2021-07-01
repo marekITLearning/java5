@@ -24,7 +24,7 @@
       </span>
       <span
         v-if="callResult.info !== null"
-        class="info1--text body-2"
+        class="primary--text body-2"
       >
         {{ callResult.info }}
       </span>

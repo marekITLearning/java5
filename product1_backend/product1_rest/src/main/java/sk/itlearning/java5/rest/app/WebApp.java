@@ -15,6 +15,8 @@ public class WebApp extends Application {
 	public Set<Class<?>> getClasses() {
 		final Set<Class<?>> resources = new HashSet<Class<?>>();
 		resources.add(ImdbData.class);
+		resources.add(CorsFilterProvider.class);
+		resources.add(ExceptionMapperProvider.class);
 		return resources;
 	}
 

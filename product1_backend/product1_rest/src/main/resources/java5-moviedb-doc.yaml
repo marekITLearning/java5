@@ -1,0 +1,93 @@
+openapi: 3.0.1
+info:
+  title: Java 5 moviedb service
+  description: Java 5 moviedb service
+  contact:
+    email: mla@digitalsystems.eu
+  version: 1.0.0
+servers:
+- url: https://localhost:8080/restapi
+  variables: {}
+tags:
+- name: movie
+paths:
+  /movie:
+    post:
+      tags:
+      - movie
+      summary: A list of movies from imdb library
+      operationId: getMovieByRequestParams
+      requestBody:
+        description: Request body of type MovieRequest. See the documentation of type
+          MovieRequest for all details.
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MovieRequest'
+        required: true
+      responses:
+        "200":
+          description: Valid response - an array of movies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Title'
+        "400":
+          description: Invalid request. Request in bad format or is missing mandatory
+            request parameters.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "403":
+          description: Forbidden or not authorized request. Missing or invalid userName
+            or apiKey or forbidden for other reasons.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+components:
+  schemas:
+    Title:
+      type: object
+      properties:
+        tconst:
+          type: string
+        primarytitle:
+          type: string
+          description: Primary title is the main movie title as used publicly
+        startyear:
+          type: integer
+          description: Year of issue
+          format: int32
+      description: Object to collect movie main information
+    ErrorResponse:
+      type: object
+      properties:
+        code:
+          type: string
+          description: Simple error code
+        status:
+          type: integer
+          description: HTTP response status
+          format: int32
+        message:
+          type: string
+          description: Human readable error message
+    MovieRequest:
+      type: object
+      properties:
+        page:
+          type: integer
+          format: int32
+        pageSize:
+          type: integer
+          format: int32
+        order:
+          type: array
+          items:
+            type: string
+        asc:
+          type: boolean
