@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  name: 'ImdbMovieListWrapper',
   data () {
     return {
       callResult: { finished: false, authorized: false, error: null, info: null },
@@ -31,7 +32,7 @@ export default {
     this.callResult.info = 'Loading data...'
     setTimeout(() => {
       this.init()
-    }, 2000)
+    }, 1000)
   },
   methods: {
     init () {

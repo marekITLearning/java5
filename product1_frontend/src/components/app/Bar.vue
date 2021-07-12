@@ -10,7 +10,12 @@
     />
 
     <v-toolbar-title>
-      MovieDB
+      <div
+        class="app_cursor_pointer"
+        @click="$router.push('/').catch(e=>{})"
+      >
+        Program1
+      </div>
     </v-toolbar-title>
 
     <v-spacer />
@@ -30,7 +35,7 @@
 
 <script>
 export default {
-  name: 'AppBar',
+  name: 'Bar',
   data () {
     return {
       drawer: true

@@ -1,5 +1,5 @@
 {
-  "name": "movie_db",
+  "name": "product1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -20,7 +20,6 @@
     "vue-pdf": "^4.2.0",
     "vue-router": "^3.5.1",
     "vue-sessionstorage": "^1.0.0",
-    "vuelidate": "^0.7.6",
     "vuetify": "^2.5.0",
     "vuex": "^3.6.2",
     "vuex-persistedstate": "^2.7.1",

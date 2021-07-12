@@ -6,7 +6,7 @@
       class="ma-0 pa-1 text-center"
       outlined
       tile
-      style="border-radius: 0.3em;"
+      style="border-radius: 4px !important;"
     >
       <v-progress-circular
         v-if="callResult.finished === false"

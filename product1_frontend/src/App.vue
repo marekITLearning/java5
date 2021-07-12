@@ -1,6 +1,6 @@
 <template>
-  <v-app id="movie_db">
-    <app-app-bar @switch-drawer="switchDrawer" />
+  <v-app id="product1">
+    <app-bar @switch-drawer="switchDrawer" />
     <app-drawer v-model="drawer" />
     <app-content />
     <app-footer />
@@ -39,9 +39,9 @@ export default {
           content: 'IE=edge'
         }],
 
-      title: 'MovieDB',
+      title: 'Product1',
       titleTemplate: (titleChunk) => {
-        return titleChunk ? `DSBC | ${titleChunk}` : 'MovieDB'
+        return titleChunk ? `DSBC | ${titleChunk}` : 'Product1'
       }
     }
   }
@@ -52,4 +52,10 @@ export default {
   ::v-deep {.v-expansion-panel-content__wrap {
     padding: 0px 12px 12px 12px !important;
   }}
+</style>
+
+<style>
+  .app_cursor_pointer {
+    cursor: pointer;
+  }
 </style>

@@ -1,0 +1,246 @@
+0 	 Dlhodobý majetok	01 	 Dlhodobý nehmotný majetok	012 	 Aktivované náklady na vývoj	A	Súvahový		
+0 	 Dlhodobý majetok	01 	 Dlhodobý nehmotný majetok	013 	 Softvér	A	Súvahový		
+0 	 Dlhodobý majetok	01 	 Dlhodobý nehmotný majetok	014 	 Oceniteľné práva	A	Súvahový		
+0 	 Dlhodobý majetok	01 	 Dlhodobý nehmotný majetok	015 	 Goodwill	PZ	Súvahový		
+0 	 Dlhodobý majetok	02	 Dlhodobý nehmotný majetok	019 	 Ostatný dlhodobý nehmotný majetok	A	Súvahový		
+0 	 Dlhodobý majetok	02 	 Dlhodobý hmotný majetok – odpisovaný	021 	 Stavby	A	Súvahový		
+0 	 Dlhodobý majetok	02 	 Dlhodobý hmotný majetok – odpisovaný	022 	 Samostatné hnuteľné veci a súbory hnuteľných vecí	A	Súvahový		
+0 	 Dlhodobý majetok	02 	 Dlhodobý hmotný majetok – odpisovaný	025 	 Pestovateľské celky trvalých porastov	A	Súvahový		
+0 	 Dlhodobý majetok	02 	 Dlhodobý hmotný majetok – odpisovaný	026 	 Základné stádo a ťažné zvieratá	A	Súvahový		
+0 	 Dlhodobý majetok	02 	 Dlhodobý hmotný majetok – odpisovaný	029 	 Ostatný dlhodobý hmotný majetok	A	Súvahový		
+0 	 Dlhodobý majetok	03 	 Dlhodobý hmotný majetok – neodpisovaný	031 	 Pozemky	A	Súvahový		
+0 	 Dlhodobý majetok	03 	 Dlhodobý hmotný majetok – neodpisovaný	032 	 Umelecké diela a zbierky	A	Súvahový		
+0 	 Dlhodobý majetok	04 	 Obstaranie dlhodobého majetku	041 	 Obstaranie dlhodobého nehmotného majetku	A	Súvahový		
+0 	 Dlhodobý majetok	04 	 Obstaranie dlhodobého majetku	042 	 Obstaranie dlhodobého hmotného majetku	A	Súvahový		
+0 	 Dlhodobý majetok	04 	 Obstaranie dlhodobého majetku	043 	 Obstaranie dlhodobého finančného majetku	A	Súvahový		
+0 	 Dlhodobý majetok	05 	 Poskytnuté preddavky na dlhodobý majetok	051 	 Poskytnuté preddavky na dlhodobý nehmotný majetok	A	Súvahový		
+0 	 Dlhodobý majetok	05 	 Poskytnuté preddavky na dlhodobý majetok	052 	 Poskytnuté preddavky na dlhodobý hmotný majetok	A	Súvahový		
+0 	 Dlhodobý majetok	05 	 Poskytnuté preddavky na dlhodobý majetok	053 	 Poskytnuté preddavky na dlhodobý finančný majetok	A	Súvahový		
+0 	 Dlhodobý majetok	06 	 Dlhodobý finančný majetok	061 	 Podielové cenné papiere a podiely v dcérskej účtovnej jednotke	A	Súvahový		
+0 	 Dlhodobý majetok	06 	 Dlhodobý finančný majetok	062 	 Podielové cenné papiere a podiely v spoločnosti s podstatným vplyvom	A	Súvahový		
+0 	 Dlhodobý majetok	06 	 Dlhodobý finančný majetok	063 	 Realizovateľné cenné papiere a podiely	A	Súvahový		
+0 	 Dlhodobý majetok	06 	 Dlhodobý finančný majetok	065 	 Dlhové cenné papiere držané do splatnosti	A	Súvahový		
+0 	 Dlhodobý majetok	06 	 Dlhodobý finančný majetok	066 	 Pôžičky účtovnej jednotke v konsolidovanom celku	A	Súvahový		
+0 	 Dlhodobý majetok	06 	 Dlhodobý finančný majetok	067 	 Ostatné pôžičky	A	Súvahový		
+0 	 Dlhodobý majetok	06 	 Dlhodobý finančný majetok	069 	 Ostatný dlhodobý finančný majetok	A	Súvahový		
+0 	 Dlhodobý majetok	07 	 Oprávky k dlhodobému nehmotnému majetku	072 	 Oprávky k aktivovaným nákladom na vývoj	P	Súvahový		
+0 	 Dlhodobý majetok	07 	 Oprávky k dlhodobému nehmotnému majetku	073 	 Oprávky k softvéru	P	Súvahový		
+0 	 Dlhodobý majetok	07 	 Oprávky k dlhodobému nehmotnému majetku	074 	 Oprávky k oceniteľným právam	P	Súvahový		
+0 	 Dlhodobý majetok	07 	 Oprávky k dlhodobému nehmotnému majetku	075	 Oprávky ku goodwillu	PZ	Súvahový		
+0 	 Dlhodobý majetok	07 	 Oprávky k dlhodobému nehmotnému majetku	079 	 Oprávky k ostatnému dlhodobému nehmotnému majetku	P	Súvahový		
+0 	 Dlhodobý majetok	08 	 Oprávky k dlhodobému hmotnému majetku	081 	 Oprávky k stavbám	P	Súvahový		
+0 	 Dlhodobý majetok	08 	 Oprávky k dlhodobému hmotnému majetku	082 	 Oprávky k samostatným hnuteľným veciam a k súboru hnuteľných vecí	P	Súvahový		
+0 	 Dlhodobý majetok	08 	 Oprávky k dlhodobému hmotnému majetku	085 	 Oprávky k pestovateľským celkom trvalých porastov	P	Súvahový		
+0 	 Dlhodobý majetok	08 	 Oprávky k dlhodobému hmotnému majetku	086 	 Oprávky k základnému stádu a ťažným zvieratám	P	Súvahový		
+0 	 Dlhodobý majetok	08 	 Oprávky k dlhodobému hmotnému majetku	089 	 Oprávky k ostatnému dlhodobému hmotnému majetku	P	Súvahový		
+0 	 Dlhodobý majetok	09 	 Opravné položky k dlhodobému majetku	091 	 Opravné položky k dlhodobému nehmotnému majetku	P	Súvahový		
+0 	 Dlhodobý majetok	09 	 Opravné položky k dlhodobému majetku	092 	 Opravné položky k dlhodobému hmotnému majetku	P	Súvahový		
+0 	 Dlhodobý majetok	09 	 Opravné položky k dlhodobému majetku	093 	 Opravné položky k nedokončenému dlhodobému nehmotnému majetku	P	Súvahový		
+0 	 Dlhodobý majetok	09 	 Opravné položky k dlhodobému majetku	094 	 Opravné položky k nedokončenému dlhodobému hmotnému majetku	P	Súvahový		
+0 	 Dlhodobý majetok	09 	 Opravné položky k dlhodobému majetku	095 	 Opravné položky k poskytnutým preddavkom na dlhodobý majetok	P	Súvahový		
+0 	 Dlhodobý majetok	09 	 Opravné položky k dlhodobému majetku	096 	 Opravné položky k dlhodobému finančnému majetku	P	Súvahový		
+0 	 Dlhodobý majetok	09 	 Opravné položky k dlhodobému majetku	097 	 Opravné položky k nadobudnutému majetku	PZ	Súvahový		
+0 	 Dlhodobý majetok	09 	 Opravné položky k dlhodobému majetku	098 	 Oprávky k opravnej položke k nadobudnutému majetku	PZ	Súvahový		
+1 	 Zásoby	11 	 Materiál	111 	 Obstaranie materiálu	A	Súvahový		
+1 	 Zásoby	11 	 Materiál	112 	 Materiál na sklade	A	Súvahový		
+1 	 Zásoby	11 	 Materiál	119 	 Materiál na ceste	A	Súvahový		
+1 	 Zásoby	12 	 Zásoby vlastnej výroby	121 	 Nedokončená výroba	A	Súvahový		
+1 	 Zásoby	12 	 Zásoby vlastnej výroby	122 	 Polotovary vlastnej výroby	A	Súvahový		
+1 	 Zásoby	12 	 Zásoby vlastnej výroby	123 	 Výrobky	A	Súvahový		
+1 	 Zásoby	12 	 Zásoby vlastnej výroby	124 	 Zvieratá	A	Súvahový		
+1 	 Zásoby	13 	 Tovar	131 	 Obstaranie tovaru	A	Súvahový		
+1 	 Zásoby	13 	 Tovar	132 	 Tovar na sklade a v predajniach	A	Súvahový		
+1 	 Zásoby	13 	 Tovar	133	 Nehnuteľnosť na predaj	A	Súvahový		
+1 	 Zásoby	13 	 Tovar	139 	 Tovar na ceste	A	Súvahový		
+1 	 Zásoby	19 	 Opravné položky k zásobám	191 	 Opravné položky k materiálu	P	Súvahový		
+1 	 Zásoby	19 	 Opravné položky k zásobám	192 	 Opravné položky k nedokončenej výrobe	P	Súvahový		
+1 	 Zásoby	19 	 Opravné položky k zásobám	193 	 Opravné položky k polotovarom vlastnej výroby	P	Súvahový		
+1 	 Zásoby	19 	 Opravné položky k zásobám	194 	 Opravné položky k výrobkom	P	Súvahový		
+1 	 Zásoby	19 	 Opravné položky k zásobám	195 	 Opravné položky k zvieratám	P	Súvahový		
+1 	 Zásoby	19 	 Opravné položky k zásobám	196 	 Opravné položky k tovaru	P	Súvahový		
+2	Finančné účty 	21 	 Peniaze	211 	 Pokladnica	A	Súvahový		
+2	Finančné účty 	21 	 Peniaze	213 	 Ceniny	A	Súvahový		
+2	Finančné účty 	22 	 Účty v bankách	221 	 Bankové účty	PZ	Súvahový		
+2	Finančné účty 	23 	 Bežné bankové úvery	231 	 Krátkodobé bankové úvery	P	Súvahový		
+2	Finančné účty 	23 	 Bežné bankové úvery	232 	 Eskontné úvery	P	Súvahový		
+2	Finančné účty 	24 	 Iné krátkodobé finančné výpomoci	241 	 Vydané krátkodobé dlhopisy	P	Súvahový		
+2	Finančné účty 	24 	 Iné krátkodobé finančné výpomoci	249 	 Ostatné krátkodobé finančné výpomoci	P	Súvahový		
+2	Finančné účty 	25 	 Krátkodobý finančný majetok	251 	 Majetkové cenné papiere na obchodovanie	A	Súvahový		
+2	Finančné účty 	25 	 Krátkodobý finančný majetok	252 	 Vlastné akcie a vlastné obchodné podiely	A	Súvahový		
+2	Finančné účty 	25 	 Krátkodobý finančný majetok	253 	 Dlhové cenné papiere na obchodovanie	A	Súvahový		
+2	Finančné účty 	25 	 Krátkodobý finančný majetok	255 	 Vlastné dlhopisy	A	Súvahový		
+2	Finančné účty 	25 	 Krátkodobý finančný majetok	256 	 Dlhové cenné papiere so splatnosťou do jedného roka držané do splatnosti	A	Súvahový		
+2	Finančné účty 	25 	 Krátkodobý finančný majetok	257 	 Ostatné realizovateľné cenné papiere	A	Súvahový		
+2	Finančné účty 	25 	 Krátkodobý finančný majetok	259 	 Obstaranie krátkodobého finančného majetku	A	Súvahový		
+2	Finančné účty 	26 	 Prevody medzi finančnými účtami	261 	 Peniaze na ceste	PZ	Súvahový		
+2	Finančné účty 	27	Tvorba rezerv	274	Tvorba rezerv	A	Súvahový		
+2	Finančné účty 	29 	 Opravné položky ku krátkodobému finančnému majetku	291 	 Opravné položky ku krátkodobému finančnému majetku	P	Súvahový		
+3 	 Zúčtovacie vzťahy	31 	 Pohľadávky	311 	 Odberatelia	A	Súvahový		
+3 	 Zúčtovacie vzťahy	31 	 Pohľadávky	312 	 Zmenky na inkaso	A	Súvahový		
+3 	 Zúčtovacie vzťahy	31 	 Pohľadávky	313 	 Pohľadávky za eskontované cenné papiere	A	Súvahový		
+3 	 Zúčtovacie vzťahy	31 	 Pohľadávky	314 	 Poskytnuté preddavky	A	Súvahový		
+3 	 Zúčtovacie vzťahy	31 	 Pohľadávky	315 	 Ostatné pohľadávky	A	Súvahový		
+3 	 Zúčtovacie vzťahy	31 	 Pohľadávky	316	 Čistá hodnota zákazky	A	Súvahový		
+3 	 Zúčtovacie vzťahy	32 	 Záväzky	321 	 Dodávatelia	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	32 	 Záväzky	322 	 Zmenky na úhradu	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	32 	 Záväzky	323 	 Krátkodobé rezervy	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	32 	 Záväzky	324 	 Prijaté preddavky	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	32 	 Záväzky	325 	 Ostatné záväzky	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	32 	 Záväzky	326 	 Nevyfakturované dodávky	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	33 	 Zúčtovanie so zamestnancami a orgánmi sociálneho poistenia a zdravotného poistenia	331 	 Zamestnanci	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	33 	 Zúčtovanie so zamestnancami a orgánmi sociálneho poistenia a zdravotného poistenia	333 	 Ostatné záväzky voči zamestnancom	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	33 	 Zúčtovanie so zamestnancami a orgánmi sociálneho poistenia a zdravotného poistenia	335 	 Pohľadávky voči zamestnancom	A	Súvahový		
+3 	 Zúčtovacie vzťahy	33 	 Zúčtovanie so zamestnancami a orgánmi sociálneho poistenia a zdravotného poistenia	336 	 Zúčtovanie s orgánmi sociálneho poistenia a zdravotného poistenia	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	34 	 Zúčtovanie daní a dotácií	341 	 Daň z príjmov	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	34 	 Zúčtovanie daní a dotácií	342 	 Ostatné priame dane	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	34 	 Zúčtovanie daní a dotácií	343 	 Daň z pridanej hodnoty	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	34 	 Zúčtovanie daní a dotácií	345 	 Ostatné dane a poplatky	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	34 	 Zúčtovanie daní a dotácií	346 	 Dotácie zo štátneho rozpočtu	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	34 	 Zúčtovanie daní a dotácií	347 	 Ostatné dotácie	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	35 	 Pohľadávky voči spoločníkom a združeniu	351 	 Pohľadávky v rámci konsolidovaného celku	A	Súvahový		
+3 	 Zúčtovacie vzťahy	35 	 Pohľadávky voči spoločníkom a združeniu	353 	 Pohľadávky za upísané vlastné imanie	A	Súvahový		
+3 	 Zúčtovacie vzťahy	35 	 Pohľadávky voči spoločníkom a združeniu	354 	 Pohľadávky voči spoločníkom a členom pri úhrade straty	A	Súvahový		
+3 	 Zúčtovacie vzťahy	35 	 Pohľadávky voči spoločníkom a združeniu	355 	 Ostatné pohľadávky voči spoločníkom a členom	A	Súvahový		
+3 	 Zúčtovacie vzťahy	35 	 Pohľadávky voči spoločníkom a združeniu	358 	 Pohľadávky voči účastníkom združenia	A	Súvahový		
+3 	 Zúčtovacie vzťahy	35 	 Pohľadávky voči spoločníkom a združeniu	361 	 Záväzky v rámci konsolidovaného celku	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	35 	 Pohľadávky voči spoločníkom a združeniu	364 	 Záväzky voči spoločníkom a členom pri rozdeľovaní zisku	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	35 	 Pohľadávky voči spoločníkom a združeniu	365 	 Ostatné záväzky voči spoločníkom a členom	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	36 	 Záväzky voči spoločníkom a združeniu	366 	 Záväzky voči spoločníkom a členom zo závislej činnosti	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	36 	 Záväzky voči spoločníkom a združeniu	367 	 Záväzky z upísaných nesplatených cenných papierov a vkladov	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	36 	 Záväzky voči spoločníkom a združeniu	368 	 Záväzky voči účastníkom združenia	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	371 	 Pohľadávky z predaja podniku	A	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	372 	 Záväzky z kúpy podniku	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	373 	 Pohľadávky a záväzky z pevných termínových operácií	A	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	374 	 Pohľadávky z nájmu	A	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	375 	 Pohľadávky z vydaných dlhopisov	A	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	376 	 Nakúpené opcie	A	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	377 	 Predané opcie	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	378 	 Iné pohľadávky	A	Súvahový		
+3 	 Zúčtovacie vzťahy	37 	 Iné pohľadávky a iné záväzky	379 	 Iné záväzky	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	38 	 Časové rozlíšenie nákladov a výnosov	381 	 Náklady budúcich období	A	Súvahový		
+3 	 Zúčtovacie vzťahy	38 	 Časové rozlíšenie nákladov a výnosov	382 	 Komplexné náklady budúcich období	A	Súvahový		
+3 	 Zúčtovacie vzťahy	38 	 Časové rozlíšenie nákladov a výnosov	383 	 Výdavky budúcich období	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	38 	 Časové rozlíšenie nákladov a výnosov	384 	 Výnosy budúcich období	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	38 	 Časové rozlíšenie nákladov a výnosov	385 	 Príjmy budúcich období	A	Súvahový		
+3 	 Zúčtovacie vzťahy	39 	 Opravná položka k zúčtovacím vzťahom a vnútorné zúčtovanie	391 	 Opravné položky k pohľadávkam	UNDEF	Súvahový		
+3 	 Zúčtovacie vzťahy	39 	 Opravná položka k zúčtovacím vzťahom a vnútorné zúčtovanie	395 	 Vnútorné zúčtovanie	A	Súvahový		
+3 	 Zúčtovacie vzťahy	39 	 Opravná položka k zúčtovacím vzťahom a vnútorné zúčtovanie	398 	 Spojovací účet pri združení	A	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	411 	 Základné imanie	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	412 	 Emisné ážio	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	413 	 Ostatné kapitálové fondy	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	414 	 Oceňovacie rozdiely z precenenia majetku a záväzkov	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	415 	 Oceňovacie rozdiely z kapitálových účastín	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	416 	 Oceňovacie rozdiely z precenenia pri zlúčení, splynutí a rozdelení	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	417 	 Zákonný rezervný fond z kapitálových vkladov	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	418 	 Nedeliteľný fond z kapitálových vkladov	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	41 	 Základné imanie a kapitálové fondy	419 	 Zmeny základného imania	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	42 	 Fondy tvorené zo zisku a prevedené výsledky hospodárenia	421 	 Zákonný rezervný fond	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	42 	 Fondy tvorené zo zisku a prevedené výsledky hospodárenia	422 	 Nedeliteľný fond	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	42 	 Fondy tvorené zo zisku a prevedené výsledky hospodárenia	423 	 Štatutárne fondy	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	42 	 Fondy tvorené zo zisku a prevedené výsledky hospodárenia	427 	 Ostatné fondy	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	42 	 Fondy tvorené zo zisku a prevedené výsledky hospodárenia	428 	 Nerozdelený zisk minulých rokov	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	42 	 Fondy tvorené zo zisku a prevedené výsledky hospodárenia	429 	 Neuhradená strata minulých rokov	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	43 	 Výsledok hospodárenia	431 	 Výsledok hospodárenia v schvaľovaní	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	45 	 Rezervy	451 	 Rezervy zákonné	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	45 	 Rezervy	459 	 Ostatné rezervy	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	46 	 Bankové úvery	461 	 Bankové úvery	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	47 	 Dlhodobé záväzky	471 	 Dlhodobé záväzky v rámci konsolidovaného celku	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	47 	 Dlhodobé záväzky	472 	 Záväzky zo sociálneho fondu	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	47 	 Dlhodobé záväzky	473 	 Vydané dlhopisy	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	47 	 Dlhodobé záväzky	474 	 Záväzky z nájmu	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	47 	 Dlhodobé záväzky	475 	 Dlhodobé prijaté preddavky	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	47 	 Dlhodobé záväzky	476 	 Dlhodobé nevyfakturované dodávky	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	47 	 Dlhodobé záväzky	478 	 Dlhodobé zmenky na úhradu	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	47 	 Dlhodobé záväzky	479 	 Ostatné dlhodobé záväzky	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	48 	 Odložený daňový záväzok a odložená daňová pohľadávka	481 	 Odložený daňový záväzok a odložená daňová pohľadávka	P	Súvahový		
+4 	 Kapitálové účty a dlhodobé záväzky	49 	 Fyzická osoba – podnikateľ	491 	 Vlastné imanie fyzickej osoby – podnikateľa	P	Súvahový		
+5 	 Náklady	50 	 Spotrebované nákupy	501 	 Spotreba materiálu	N	Výsledkový		
+5 	 Náklady	50 	 Spotrebované nákupy	502 	 Spotreba energie	N	Výsledkový		
+5 	 Náklady	50 	 Spotrebované nákupy	503 	 Spotreba ostatných neskladovateľných dodávok	N	Výsledkový		
+5 	 Náklady	50 	 Spotrebované nákupy	504 	 Predaný tovar	N	Výsledkový		
+5 	 Náklady	50 	 Spotrebované nákupy	505 	 Tvorba a zúčtovanie opravných položiek k zásobám	N	Výsledkový		
+5 	 Náklady	50 	 Spotrebované nákupy	507	 Predaná nehnuteľnosť	N	Výsledkový		
+5 	 Náklady	51 	 Služby	511 	 Opravy a udržiavanie	N	Výsledkový		
+5 	 Náklady	51 	 Služby	512 	 Cestovné	N	Výsledkový		
+5 	 Náklady	51 	 Služby	513 	 Náklady na reprezentáciu	N	Výsledkový		
+5 	 Náklady	51 	 Služby	518 	 Ostatné služby	N	Výsledkový		
+5 	 Náklady	52 	 Osobné náklady	521 	 Mzdové náklady	N	Výsledkový		
+5 	 Náklady	52 	 Osobné náklady	522 	 Príjmy spoločníkov a členov zo závislej činnosti	N	Výsledkový		
+5 	 Náklady	52 	 Osobné náklady	523 	 Odmeny členom orgánov spoločnosti a družstva	N	Výsledkový		
+5 	 Náklady	52 	 Osobné náklady	524 	 Zákonné sociálne poistenie	N	Výsledkový		
+5 	 Náklady	52 	 Osobné náklady	525 	 Ostatné sociálne poistenie	N	Výsledkový		
+5 	 Náklady	52 	 Osobné náklady	526 	 Sociálne náklady fyzickej osoby – podnikateľa	N	Výsledkový		
+5 	 Náklady	52 	 Osobné náklady	527 	 Zákonné sociálne náklady	N	Výsledkový		
+5 	 Náklady	52 	 Osobné náklady	528 	 Ostatné sociálne náklady	N	Výsledkový		
+5 	 Náklady	53 	 Dane a poplatky	531 	 Daň z motorových vozidiel	N	Výsledkový		
+5 	 Náklady	53 	 Dane a poplatky	532 	 Daň z nehnuteľnosti	N	Výsledkový		
+5 	 Náklady	53 	 Dane a poplatky	538 	 Ostatné dane a poplatky	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	541 	 Zostatková cena predaného dlhodobého nehmotného majetku a dlhodobého hmotného majetku	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	542 	 Predaný materiál	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	543 	 Dary	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	544 	 Zmluvné pokuty, penále a úroky z omeškania	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	545 	 Ostatné pokuty, penále a úroky z omeškania	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	546 	 Odpis pohľadávky	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	547 	 Tvorba a zúčtovanie opravných položiek k pohľadávkam	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	548 	 Ostatné náklady na hospodársku činnosť	N	Výsledkový		
+5 	 Náklady	54 	 Iné náklady na hospodársku činnosť	549 	 Manká a škody	N	Výsledkový		
+5 	 Náklady	55 	 Odpisy a opravné položky k dlhodobému majetku	551 	 Odpisy dlhodobého nehmotného majetku a dlhodobého hmotného majetku	N	Výsledkový		
+5 	 Náklady	55 	 Odpisy a opravné položky k dlhodobému majetku	553 	 Tvorba a zúčtovanie opravných položiek k dlhodobému majetku	N	Výsledkový		
+5 	 Náklady	55 	 Odpisy a opravné položky k dlhodobému majetku	555 	 Zúčtovanie komplexných nákladov budúcich období	N	Výsledkový		
+5 	 Náklady	55 	 Odpisy a opravné položky k dlhodobému majetku	557 	 Zúčtovanie oprávky k opravnej položke k nadobudnutému majetku	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	561 	 Predané cenné papiere a podiely	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	562 	 Úroky	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	563 	 Kurzové straty	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	564 	 Náklady na precenenie cenných papierov	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	565 	 Tvorba a zúčtovanie opravných položiek k finančnému majetku	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	566 	 Náklady na krátkodobý finančný majetok	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	567 	 Náklady na derivátové operácie	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	568 	 Ostatné finančné náklady	N	Výsledkový		
+5 	 Náklady	56 	 Finančné náklady	569 	 Manká a škody na finančnom majetku	N	Výsledkový		
+5 	 Náklady	58 	 Mimoriadne náklady	582 	 Škody	N	Výsledkový		
+5 	 Náklady	58 	 Mimoriadne náklady	588 	 Ostatné mimoriadne náklady	N	Výsledkový		
+5 	 Náklady	59 	 Dane z príjmov a prevodové účty	591 	 Splatná daň z príjmov z bežnej činnosti	N	Výsledkový		
+5 	 Náklady	59 	 Dane z príjmov a prevodové účty	592 	 Odložená daň z príjmov z bežnej činnosti	N	Výsledkový		
+5 	 Náklady	59 	 Dane z príjmov a prevodové účty	593 	 Splatná daň z príjmov z mimoriadnej činnosti	N	Výsledkový		
+5 	 Náklady	59 	 Dane z príjmov a prevodové účty	594 	 Odložená daň z príjmov z mimoriadnej činnosti	N	Výsledkový		
+5 	 Náklady	59 	 Dane z príjmov a prevodové účty	595 	 Dodatočné odvody dane z príjmov	N	Výsledkový		
+5 	 Náklady	59 	 Dane z príjmov a prevodové účty	596 	 Prevod podielov na výsledku hospodárenia spoločníkom	N	Výsledkový		
+5 	 Náklady	59 	 Dane z príjmov a prevodové účty	597 	 Prevod nákladov na hospodársku činnosť	N	Výsledkový		
+5 	 Náklady	59 	 Dane z príjmov a prevodové účty	598 	 Prevod finančných nákladov	N	Výsledkový		
+6 	 Výnosy	60 	 Tržby za vlastné výkony a tovar	601 	 Tržby za vlastné výrobky	V	Výsledkový		
+6 	 Výnosy	60 	 Tržby za vlastné výkony a tovar	602 	 Tržby z predaja služieb	V	Výsledkový		
+6 	 Výnosy	60 	 Tržby za vlastné výkony a tovar	604 	 Tržby za tovar	V	Výsledkový		
+6 	 Výnosy	60 	 Tržby za vlastné výkony a tovar	606	 Výnosy zo zákazky	V	Výsledkový		
+6 	 Výnosy	60 	 Tržby za vlastné výkony a tovar	607	 Výnosy z nehnuteľnosti na predaj	V	Výsledkový		
+6 	 Výnosy	61 	 Zmeny stavu vnútroorganizačných zásob	611 	 Zmena stavu nedokončenej výroby	V	Výsledkový		
+6 	 Výnosy	61 	 Zmeny stavu vnútroorganizačných zásob	612 	 Zmena stavu polotovarov	V	Výsledkový		
+6 	 Výnosy	61 	 Zmeny stavu vnútroorganizačných zásob	613 	 Zmena stavu výrobkov	V	Výsledkový		
+6 	 Výnosy	61 	 Zmeny stavu vnútroorganizačných zásob	614 	 Zmena stavu zvierat	V	Výsledkový		
+6 	 Výnosy	62 	 Aktivácia	621 	 Aktivácia materiálu a tovaru	V	Výsledkový		
+6 	 Výnosy	62 	 Aktivácia	622 	 Aktivácia vnútroorganizačných služieb	V	Výsledkový		
+6 	 Výnosy	62 	 Aktivácia	623 	 Aktivácia dlhodobého nehmotného majetku	V	Výsledkový		
+6 	 Výnosy	62 	 Aktivácia	624 	 Aktivácia dlhodobého hmotného majetku	V	Výsledkový		
+6 	 Výnosy	64 	 Iné výnosy z hospodárskej činnosti	641 	 Tržby z predaja dlhodobého nehmotného majetku a dlhodobého hmotného majetku	V	Výsledkový		
+6 	 Výnosy	64 	 Iné výnosy z hospodárskej činnosti	642 	 Tržby z predaja materiálu	V	Výsledkový		
+6 	 Výnosy	64 	 Iné výnosy z hospodárskej činnosti	644 	 Zmluvné pokuty, penále a úroky z omeškania	V	Výsledkový		
+6 	 Výnosy	64 	 Iné výnosy z hospodárskej činnosti	645 	 Ostatné pokuty, penále a úroky z omeškania	V	Výsledkový		
+6 	 Výnosy	64 	 Iné výnosy z hospodárskej činnosti	646 	 Výnosy z odpísaných pohľadávok	V	Výsledkový		
+6 	 Výnosy	64 	 Iné výnosy z hospodárskej činnosti	648 	 Ostatné výnosy z hospodárskej činnosti	V	Výsledkový		
+6 	 Výnosy	65 	 Zúčtovanie niektorých položiek z hospodárskej činnosti	655 	 Zúčtovanie komplexných nákladov budúcich období	V	Výsledkový		
+6 	 Výnosy	65 	 Zúčtovanie niektorých položiek z hospodárskej činnosti	657 	 Zúčtovanie oprávky k opravnej položke k nadobudnutému majetku	V	Výsledkový		
+6 	 Výnosy	66 	 Finančné výnosy	661 	 Tržby z predaja cenných papierov a podielov	V	Výsledkový		
+6 	 Výnosy	66 	 Finančné výnosy	662 	 Úroky	V	Výsledkový		
+6 	 Výnosy	66 	 Finančné výnosy	663 	 Kurzové zisky	V	Výsledkový		
+6 	 Výnosy	66 	 Finančné výnosy	664 	 Výnosy z precenenia cenných papierov	V	Výsledkový		
+6 	 Výnosy	66 	 Finančné výnosy	665 	 Výnosy z dlhodobého finančného majetku	V	Výsledkový		
+6 	 Výnosy	66 	 Finančné výnosy	666 	 Výnosy z krátkodobého finančného majetku	V	Výsledkový		
+6 	 Výnosy	66 	 Finančné výnosy	667 	 Výnosy z derivátových operácií	V	Výsledkový		
+6 	 Výnosy	66 	 Finančné výnosy	668 	 Ostatné finančné výnosy	V	Výsledkový		
+6 	 Výnosy	68 	 Mimoriadne výnosy	682 	 Náhrady škôd	V	Výsledkový		
+6 	 Výnosy	68 	 Mimoriadne výnosy	688 	 Ostatné mimoriadne výnosy	V	Výsledkový		
+6 	 Výnosy	69 	 Prevodové účty	697 	 Prevod výnosov z hospodárskej činnosti	V	Výsledkový		
+6 	 Výnosy	69 	 Prevodové účty	698 	 Prevod finančných výnosov	V	Výsledkový		
+7 	 Uzávierkové účty a podsúvahové účty	70 	 Súvahové uzávierkové účty	701 	 Začiatočný účet súvahový	U	U		
+7 	 Uzávierkové účty a podsúvahové účty	70 	 Súvahové uzávierkové účty	702 	 Konečný účet súvahový	U	U		
+7 	 Uzávierkové účty a podsúvahové účty	71 	 Výsledkový uzávierkový účet	710 	 Účet ziskov a strát	U	U		
+7 	 Uzávierkové účty a podsúvahové účty	71 	 Výsledkový uzávierkový účet	711 	 Začiatočný účet nákladov a výnosov	U	U		

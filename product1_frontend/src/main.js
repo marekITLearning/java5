@@ -16,14 +16,12 @@ import '@mdi/font/css/materialdesignicons.css'
 import { sync } from 'vuex-router-sync'
 
 import Meta from 'vue-meta'
-import Vuelidate from 'vuelidate'
 import VueSessionStorage from 'vue-sessionstorage'
 import VueCookies from 'vue-cookies'
 
 sync(store, router)
 
 Vue.use(Meta)
-Vue.use(Vuelidate)
 Vue.use(VueSessionStorage)
 Vue.use(VueCookies)
 

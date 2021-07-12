@@ -4,6 +4,8 @@ const version = JSON.parse(packageJson).version || 0
 const webpack = require('webpack')
 
 module.exports = {
+  publicPath: './',
+  assetsDir: './',
   transpileDependencies: ['vuetify'],
   devServer: {
     disableHostCheck: true

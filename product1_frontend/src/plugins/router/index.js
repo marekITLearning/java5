@@ -3,22 +3,32 @@ import Router from 'vue-router'
 
 const routes = [
   {
-    path: '/movies',
-    name: 'Movies',
-    component: () => import(/* webpackChunkName: "Movies" */ '@/views/Movies.vue'),
+    path: '/',
+    name: 'Home',
+    component: () => import(/* webpackChunkName: "AccountFrame" */ '@/views/AccountFrame.vue'),
     meta: {
-      label: 'Movie List',
-      icon: 'mdi-view-dashboard-variant',
+      label: 'Account Frame',
+      icon: 'mdi-file-table-box-outline',
+      isMainMenuItem: false
+    }
+  },
+  {
+    path: '/accounframe',
+    name: 'AccountFrame',
+    component: () => import(/* webpackChunkName: "AccountFrame" */ '@/views/AccountFrame.vue'),
+    meta: {
+      label: 'Account Frame',
+      icon: 'mdi-file-table-box-outline',
       isMainMenuItem: true
     }
   },
   {
-    path: '/finder',
-    name: 'Finder',
-    component: () => import(/* webpackChunkName: "Finder" */ '@/views/Finder.vue'),
+    path: '/imdbmovielist',
+    name: 'ImdbMovieList',
+    component: () => import(/* webpackChunkName: "ImdbMovieList" */ '@/views/ImdbMovieList.vue'),
     meta: {
-      label: 'Movie Finder',
-      icon: 'mdi-archive-arrow-down-outline',
+      label: 'IMDB Movie List',
+      icon: 'mdi-view-list-outline',
       isMainMenuItem: true
     }
   }

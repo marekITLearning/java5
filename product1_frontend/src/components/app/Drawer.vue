@@ -41,7 +41,7 @@ export default {
   name: 'Drawer',
   computed: {
     links () {
-      return router.options.routes
+      return router.options.routes.filter(l => l.meta.isMainMenuItem)
     }
   }
 }
