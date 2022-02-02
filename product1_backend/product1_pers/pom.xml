@@ -12,7 +12,7 @@
 	<artifactId>product1_pers</artifactId>
 
 	<properties>
-		<postgresql.driver.version>42.2.5</postgresql.driver.version>
+		<postgresql.driver.version>42.2.25</postgresql.driver.version>
 		<eclipselink.version>2.7.3</eclipselink.version>
 		<javaee.web.api.version>8.0</javaee.web.api.version>
 		<jdbcDdlRes>src/main/resources/sql</jdbcDdlRes>
