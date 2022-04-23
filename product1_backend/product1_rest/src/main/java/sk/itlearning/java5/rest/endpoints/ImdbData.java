@@ -15,9 +15,6 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
-import sk.itlearning.java5.biz.email.EmailSender;
-import sk.itlearning.java5.conf.AppConfig;
-import sk.itlearning.java5.conf.util.JsonUtil;
 import sk.itlearning.java5.model.MovieRequest;
 import sk.itlearning.java5.pers.entity.Title;
 import sk.itlearning.java5.pers.service.TitleService;
@@ -42,13 +39,7 @@ public class ImdbData {
 			return ErrorResponse.build(ErrorCodes.BadDataOrArguments);
 		}
 		List<Title> list = titleService.getMovieByRequestParams(request);
-		
-		if (AppConfig.isProdEnvironment()) {
-			EmailSender.sendEmail("New user has been registered");
-			EmailSender.sendEmail(AppConfig.hostUrl);
-		}
-		
-		return Response.ok(JsonUtil.toJson(list)).build();
+		return Response.ok(list).build();
 	}
 
 }
