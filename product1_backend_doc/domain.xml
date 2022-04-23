@@ -29,9 +29,7 @@
   </resources>
   <servers>
     <server config-ref="server-config" name="server">
-
       <resource-ref ref="jdbc/appdb"></resource-ref>
-
 	  <resource-ref ref="jdbc/__default"></resource-ref>
       <resource-ref ref="concurrent/__defaultContextService"></resource-ref>
       <resource-ref ref="concurrent/__defaultManagedExecutorService"></resource-ref>
