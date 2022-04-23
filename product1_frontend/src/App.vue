@@ -1,7 +1,7 @@
 <template>
   <v-app id="product1">
-    <app-bar @switch-drawer="switchDrawer" />
-    <app-drawer v-model="drawer" />
+    <app-bar />
+    <app-drawer />
     <app-content />
     <app-footer />
   </v-app>

@@ -8,7 +8,12 @@
     <v-data-table
       :headers="headers"
       :items="movies"
-      :items-per-page="10"
+      :items-per-page="8"
+      :footer-props="{
+        'items-per-page-options': [8, 16, 40]
+      }"
+      :options.sync="options"
+      :server-items-length="10000"
       class="elevation-1"
       dense
     />
@@ -25,14 +30,17 @@ export default {
         { text: 'Primary title', value: 'primarytitle' },
         { text: 'Issue year', value: 'startyear' }
       ],
-      movies: []
+      movies: [],
+      options: {}
     }
   },
-  created () {
-    this.callResult.info = 'Loading data...'
-    setTimeout(() => {
-      this.init()
-    }, 1000)
+  watch: {
+    options: {
+      handler () {
+        this.init()
+      },
+      deep: true
+    }
   },
   methods: {
     init () {
@@ -40,9 +48,9 @@ export default {
       this.callResult.finished = false
       this.callResult.error = null
       const params = {}
-      params.page = 3
-      params.pageSize = 10
-      params.order = ['primarytitl']
+      params.page = this.options.page
+      params.pageSize = this.options.itemsPerPage
+      params.order = ['primarytitle']
       params.asc = false
       this.$xapi.post('movie', params)
         .then(r => {

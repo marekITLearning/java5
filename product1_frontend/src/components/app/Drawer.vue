@@ -5,9 +5,8 @@
     mini-variant-width="76"
     color="secondary2"
     class="elevation-5"
-    :stateless="!$vuetify.breakpoint.xs"
-    :permanent="!$vuetify.breakpoint.xs"
-    :temporary="$vuetify.breakpoint.xs"
+    :mini-variant.sync="mini"
+    permanent
     dark
     app
   >
@@ -15,6 +14,21 @@
       dense
       nav
     >
+      <v-list-item class="px-2">
+        <v-list-item-avatar>
+          <v-img src="https://randomuser.me/api/portraits/men/85.jpg" />
+        </v-list-item-avatar>
+
+        <v-list-item-title>John Leider</v-list-item-title>
+
+        <v-btn
+          icon
+          @click.stop="mini = !mini"
+        >
+          <v-icon>mdi-chevron-left</v-icon>
+        </v-btn>
+      </v-list-item>
+
       <v-list-item
         v-for="(link, idx) in links"
         :key="idx"
@@ -39,6 +53,11 @@ import router from '@/plugins/router'
 
 export default {
   name: 'Drawer',
+  data () {
+    return {
+      mini: false
+    }
+  },
   computed: {
     links () {
       return router.options.routes.filter(l => l.meta.isMainMenuItem)
