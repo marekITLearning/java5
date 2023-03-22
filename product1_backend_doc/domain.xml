@@ -19,7 +19,7 @@
     <jdbc-connection-pool is-isolation-level-guaranteed="false" datasource-classname="org.postgresql.ds.PGConnectionPoolDataSource" name="PostgresPool" res-type="javax.sql.ConnectionPoolDataSource">
       <property name="URL" value="jdbc:postgresql://localhost:5432/imdb?useUnicode=true;characterEncoding=utf-8"></property>
 	  <property name="user" value="postgres"></property>
-	  <property name="password" value="postgres"></property>
+	  <property name="password" value="sa"></property>
     </jdbc-connection-pool>
 
     <context-service object-type="system-all" description="context service" jndi-name="concurrent/__defaultContextService"></context-service>

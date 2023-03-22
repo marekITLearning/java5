@@ -5,10 +5,6 @@
     dark
     app
   >
-    <v-app-bar-nav-icon
-      @click.stop="switchDrawer"
-    />
-
     <v-toolbar-title>
       <div
         class="app_cursor_pointer"
@@ -39,12 +35,6 @@ export default {
   data () {
     return {
       drawer: true
-    }
-  },
-  methods: {
-    switchDrawer () {
-      this.drawer = !this.drawer
-      this.$emit('switch-drawer', this.drawer)
     }
   }
 }

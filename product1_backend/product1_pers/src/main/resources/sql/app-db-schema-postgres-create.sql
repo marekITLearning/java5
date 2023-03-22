@@ -1,3 +1,33 @@
-CREATE TABLE RATING (TCONST VARCHAR(255) NOT NULL, AVERAGERATING FLOAT, NUMVOTES INTEGER, PRIMARY KEY (TCONST));
-CREATE TABLE TITLE (TCONST VARCHAR(255) NOT NULL, PRIMARYTITLE VARCHAR(255), STARTYEAR INTEGER, PRIMARY KEY (TCONST));
-ALTER TABLE RATING ADD CONSTRAINT FK_RATING_TCONST FOREIGN KEY (TCONST) REFERENCES TITLE (TCONST);
+CREATE TABLE public.title
+(
+	tconst text,
+	titleType text,
+	primaryTitle text,
+	originalTitle text,
+	isAdult boolean,
+	startYear integer,
+	endYear integer,
+	runtimeMinutes integer,
+	genres text,
+    CONSTRAINT title_pkey PRIMARY KEY (tconst)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.title OWNER to postgres;
+
+CREATE TABLE public.rating
+(
+	tconst text,
+	averageRating numeric(3,1),
+	numVotes integer,
+    CONSTRAINT rating_pkey PRIMARY KEY (tconst)
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.rating OWNER to postgres;

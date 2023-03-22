@@ -110,28 +110,8 @@
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>3.2.0</version>
 				</plugin>
-				<plugin>
-					<groupId>org.zeroturnaround</groupId>
-					<artifactId>jrebel-maven-plugin</artifactId>
-					<version>1.1.10</version>
-				</plugin>
 			</plugins>
 		</pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.zeroturnaround</groupId>
-				<artifactId>jrebel-maven-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>generate-rebel-xml</id>
-						<phase>process-resources</phase>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
 	</build>
 
 </project>

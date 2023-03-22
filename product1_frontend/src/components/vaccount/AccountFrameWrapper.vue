@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h4>Account Frame Wrapper</h4>
     <v-row>
       <v-col
         cols="12"
@@ -41,14 +40,14 @@ export default {
     return {
       osnova: [],
       headers: [
-        { text: 'Class 1', value: 'class1' },
-        { text: 'Class 1', value: 'className1' },
-        { text: 'Class 1', value: 'class2' },
-        { text: 'Class 1', value: 'className2' },
-        { text: 'Class 1', value: 'class3' },
-        { text: 'Class 1', value: 'className3' },
-        { text: 'Class 1', value: 'type1' },
-        { text: 'Class 1', value: 'type2' }
+        { text: 'A', value: 'class1', width: '10%' },
+        { text: 'B', value: 'className1', width: '10%' },
+        { text: 'C', value: 'class2', width: '10%' },
+        { text: 'D', value: 'className2', width: '20%' },
+        { text: 'E', value: 'class3', width: '10%' },
+        { text: 'F', value: 'className3', width: '20%' },
+        { text: 'G', value: 'type1', width: '10%' },
+        { text: 'H', value: 'type2', width: '10%' }
       ],
       aktiva: [],
       pasiva: [],
