@@ -20,10 +20,15 @@ set JAVA_HOME=C:/devel/jdk-17.0.6
 5.
 - opend cmd
 - cd c:\devel\projects\java5\product1_backend_doc
+- run command (to create imdb database)
+"C:\devel\PostgreSQL\12.7\bin\psql" -U postgres -a -q -f ..\product1_backend\product1_pers\src\main\resources\sql\app-db-postgres-create.sql
+
+- run command (to create database schema (tablese))
+"C:\devel\PostgreSQL\12.7\bin\psql" -U postgres -d imdb -a -q -f ..\product1_backend\product1_pers\src\main\resources\sql\app-db-schema-postgres-create.sql
+
 - connect to db with command
 "C:\devel\PostgreSQL\15\bin\psql" -d imdb -U postgres
-- while connected to db run commands:
--- create db
--- create schema
+
 \copy title(tconst, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres) FROM 'title.basics.tsv' DELIMITER E'\t' CSV ENCODING 'UTF8' HEADER NULL '\N' QUOTE E'\b'
+
 \copy rating(tconst, averageRating, numVotes) FROM 'title.rating.tsv' DELIMITER E'\t' CSV ENCODING 'UTF8' HEADER

@@ -1,0 +1,3 @@
+<template>
+  Movies view
+</template>
