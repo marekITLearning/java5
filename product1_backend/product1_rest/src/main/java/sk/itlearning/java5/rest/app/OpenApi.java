@@ -14,7 +14,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 		description = "Java 5 moviedb service", 
 		contact = @Contact(email = "mla@digitalsystems.eu")), 
 		tags = {@Tag(name = "movie")},
-		servers = { @Server(url = "https://localhost:8080/restapi") })
+		servers = { @Server(url = "https://localhost:8081/restapi/api") })
 @Path("openapi.yaml")
 public class OpenApi {
 

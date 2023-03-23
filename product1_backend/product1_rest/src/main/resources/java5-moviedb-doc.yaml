@@ -6,7 +6,7 @@ info:
     email: mla@digitalsystems.eu
   version: 1.0.0
 servers:
-- url: https://localhost:8080/restapi
+- url: https://localhost:8081/restapi/api
   variables: {}
 tags:
 - name: movie
@@ -91,3 +91,5 @@ components:
             type: string
         asc:
           type: boolean
+        title:
+          type: string

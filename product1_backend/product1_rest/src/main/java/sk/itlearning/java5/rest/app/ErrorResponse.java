@@ -20,11 +20,11 @@ public class ErrorResponse {
 	private ErrorResponse() {
 	}
 
-	public static Response build(ErrorCodes errorCode) {
+	public static Response build(ErrorCodes errorCode, String message) {
 		ErrorResponse er = new ErrorResponse();
 		er.status = errorCode.getStatusCode();
 		er.code = errorCode.name();
-		er.message = errorCode.name();
+		er.message = message;
 		return Response.status(er.status).entity(er.toJson()).build();
 	}
 

@@ -1,6 +1,5 @@
 package sk.itlearning.java5.rest.app;
 
-import javax.ws.rs.NotFoundException;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
@@ -18,15 +17,15 @@ public class ExceptionMapperProvider implements ExceptionMapper<Throwable> {
 	@Override
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response toResponse(Throwable exception) {
-		
-		if (exception instanceof NotFoundException) {
+
+		if (exception instanceof IllegalArgumentException) {
 			logger.fatal(exception);
-			return ErrorResponse.build(ErrorCodes.NotFoundException);	
+			return ErrorResponse.build(ErrorCodes.NotFoundException, exception.getLocalizedMessage());
 		}
-		
+
 		exception.printStackTrace();
 
-		return ErrorResponse.build(ErrorCodes.BackendServerError);
+		return ErrorResponse.build(ErrorCodes.BackendServerError, "Unknown error");
 	}
 
 }

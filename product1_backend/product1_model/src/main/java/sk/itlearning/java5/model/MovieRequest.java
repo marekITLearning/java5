@@ -9,6 +9,8 @@ public class MovieRequest {
 	private String[] order;
 
 	private Boolean asc = Boolean.TRUE;
+	
+	private String title;
 
 	public Integer getPage() {
 		return page;
@@ -40,6 +42,14 @@ public class MovieRequest {
 
 	public void setAsc(Boolean asc) {
 		this.asc = asc;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 }

@@ -18,7 +18,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import sk.itlearning.java5.model.MovieRequest;
 import sk.itlearning.java5.pers.entity.Title;
 import sk.itlearning.java5.pers.service.TitleService;
-import sk.itlearning.java5.rest.app.ErrorCodes;
 import sk.itlearning.java5.rest.app.ErrorResponse;
 
 @Path("movie")
@@ -35,9 +34,6 @@ public class ImdbData {
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getMovieByRequestParams(MovieRequest request) {
-		if (request == null) {
-			return ErrorResponse.build(ErrorCodes.BadDataOrArguments);
-		}
 		List<Title> list = titleService.getMovieByRequestParams(request);
 		return Response.ok(list).build();
 	}
