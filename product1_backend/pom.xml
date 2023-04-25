@@ -22,18 +22,33 @@
 		<module>product1_pers</module>
 		<module>product1_rest</module>
 	</modules>
-
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>javax</groupId>
-				<artifactId>javaee-api</artifactId>
-				<version>8.0</version>
+				<groupId>jakarta.platform</groupId>
+				<artifactId>jakarta.jakartaee-api</artifactId>
+				<version>10.0.0</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.logging.log4j</groupId>
-				<artifactId>log4j-core</artifactId>
-				<version>2.14.1</version>
+				<groupId>fish.payara.extras</groupId>
+				<artifactId>payara-micro</artifactId>
+				<version>6.2023.4</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.persistence</groupId>
+				<artifactId>eclipselink</artifactId>
+				<version>4.0.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.postgresql</groupId>
+				<artifactId>postgresql</artifactId>
+				<version>42.6.0</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.gson</groupId>
+				<artifactId>gson</artifactId>
+				<version>2.8.6</version>
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.jaxb</groupId>
@@ -43,34 +58,29 @@
 				<scope>import</scope>
 			</dependency>
 			<dependency>
-				<groupId>commons-io</groupId>
-				<artifactId>commons-io</artifactId>
-				<version>2.8.0</version>
+				<groupId>io.github.cdimascio</groupId>
+				<artifactId>java-dotenv</artifactId>
+				<version>5.2.2</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-lang3</artifactId>
-				<version>3.12.0</version>
+				<groupId>sk.itlearning.java5</groupId>
+				<artifactId>product1_model</artifactId>
+				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>com.google.code.gson</groupId>
-				<artifactId>gson</artifactId>
-				<version>2.8.6</version>
+				<groupId>sk.itlearning.java5</groupId>
+				<artifactId>product1_conf</artifactId>
+				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>io.swagger.core.v3</groupId>
-				<artifactId>swagger-jaxrs2</artifactId>
-				<version>2.1.7</version>
+				<groupId>sk.itlearning.java5</groupId>
+				<artifactId>product1_biz</artifactId>
+				<version>1.0-SNAPSHOT</version>
 			</dependency>
 			<dependency>
-				<groupId>io.swagger.codegen.v3</groupId>
-				<artifactId>swagger-codegen-maven-plugin</artifactId>
-				<version>3.0.25</version>
-			</dependency>
-			<dependency>
-				<groupId>io.swagger.core.v3</groupId>
-				<artifactId>swagger-annotations</artifactId>
-				<version>2.1.7</version>
+				<groupId>sk.itlearning.java5</groupId>
+				<artifactId>product1_pers</artifactId>
+				<version>1.0-SNAPSHOT</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -101,10 +111,6 @@
 				<plugin>
 					<artifactId>maven-install-plugin</artifactId>
 					<version>2.5.2</version>
-				</plugin>
-				<plugin>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.22.2</version>
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>

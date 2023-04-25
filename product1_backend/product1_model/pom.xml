@@ -2,7 +2,6 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
 		<groupId>sk.itlearning.java5</groupId>
 		<artifactId>product1_backend</artifactId>
@@ -10,16 +9,5 @@
 	</parent>
 
 	<artifactId>product1_model</artifactId>
-
-	<dependencies>
-		<dependency>
-			<groupId>io.swagger.core.v3</groupId>
-			<artifactId>swagger-annotations</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.logging.log4j</groupId>
-			<artifactId>log4j-core</artifactId>
-		</dependency>
-	</dependencies>
 
 </project>

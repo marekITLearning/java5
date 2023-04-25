@@ -1,16 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<persistence version="2.2"
-	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+	version="3.0">
 
-	<persistence-unit name="DDL_GEN" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="DDL_GEN"
+		transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
 		<class>sk.itlearning.java5.pers.entity.Rating</class>
 		<class>sk.itlearning.java5.pers.entity.Title</class>
 		<properties>
-			<property name="javax.persistence.schema-generation.scripts.action" value="create" />
+			<property
+				name="javax.persistence.schema-generation.scripts.action"
+				value="create" />
 		</properties>
+	</persistence-unit>
+
+	<persistence-unit name="APP_DB" transaction-type="JTA">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<jta-data-source>jdbc/appdb</jta-data-source>
+		<class>sk.itlearning.java5.pers.entity.Rating</class>
+		<class>sk.itlearning.java5.pers.entity.Title</class>
 	</persistence-unit>
 
 </persistence>

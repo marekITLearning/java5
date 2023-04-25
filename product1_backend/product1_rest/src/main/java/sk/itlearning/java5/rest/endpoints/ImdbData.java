@@ -1,41 +1,35 @@
 package sk.itlearning.java5.rest.endpoints;
 
-import java.util.List;
+import java.time.LocalDateTime;
 
-import javax.inject.Inject;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
-
-import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.media.ArraySchema;
-import io.swagger.v3.oas.annotations.media.Content;
-import io.swagger.v3.oas.annotations.media.Schema;
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
-import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import jakarta.ws.rs.POST;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.core.Response;
+import sk.itlearning.java5.conf.AppConfig;
 import sk.itlearning.java5.model.MovieRequest;
-import sk.itlearning.java5.pers.entity.Title;
-import sk.itlearning.java5.pers.service.TitleService;
-import sk.itlearning.java5.rest.app.ErrorResponse;
 
 @Path("movie")
 public class ImdbData {
 
-	@Inject
-	private TitleService titleService;
-
-	@Operation(summary = "A list of movies from imdb library", tags = {
-			"movie" }, requestBody = @RequestBody(required = true, description = "Request body of type MovieRequest. See the documentation of type MovieRequest for all details.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = MovieRequest.class))), responses = {
-					@ApiResponse(responseCode = "200", description = "Valid response - an array of movies", content = @Content(mediaType = "application/json", array = @ArraySchema(schema = @Schema(implementation = Title.class)))),
-					@ApiResponse(responseCode = "400", description = "Invalid request. Request in bad format or is missing mandatory request parameters.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))),
-					@ApiResponse(responseCode = "403", description = "Forbidden or not authorized request. Missing or invalid userName or apiKey or forbidden for other reasons.", content = @Content(mediaType = "application/json", schema = @Schema(implementation = ErrorResponse.class))) })
 	@POST
-	@Produces(MediaType.APPLICATION_JSON)
+	@Produces(MediaType.TEXT_HTML)
 	public Response getMovieByRequestParams(MovieRequest request) {
-		List<Title> list = titleService.getMovieByRequestParams(request);
-		return Response.ok(list).build();
+
+		StringBuffer sb = new StringBuffer();
+
+		sb.append("Production environment: " + AppConfig.isProdEnvironment());
+
+		sb.append("\n");
+
+		sb.append("Dummy imdb movies message... Db layer not yet ready...");
+
+		sb.append("\n");
+
+		sb.append("Current time: " + LocalDateTime.now().toString());
+
+		return Response.ok(sb.toString()).build();
 	}
 
 }

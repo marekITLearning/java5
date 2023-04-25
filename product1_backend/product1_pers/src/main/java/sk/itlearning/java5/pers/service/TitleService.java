@@ -3,15 +3,14 @@ package sk.itlearning.java5.pers.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.ejb.Stateful;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Order;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
-
+import jakarta.ejb.Stateful;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.criteria.CriteriaBuilder;
+import jakarta.persistence.criteria.CriteriaQuery;
+import jakarta.persistence.criteria.Order;
+import jakarta.persistence.criteria.Predicate;
+import jakarta.persistence.criteria.Root;
 import sk.itlearning.java5.model.MovieRequest;
 import sk.itlearning.java5.pers.entity.Title;
 
@@ -44,8 +43,7 @@ public class TitleService {
 			}
 		}
 		if (orderList.size() == 0) {
-			orderList.add(request.getAsc() ? cb.asc(root.get(Title.F_tconst))
-					: cb.desc(root.get(Title.F_tconst)));
+			orderList.add(request.getAsc() ? cb.asc(root.get(Title.F_tconst)) : cb.desc(root.get(Title.F_tconst)));
 		}
 		q.select(root).orderBy(orderList);
 
@@ -56,8 +54,8 @@ public class TitleService {
 		if (titleFilter != null) {
 			q.where(cb.and(titleFilter));
 		}
-		int page = (request.getPage() - 1 < 0) ? 0 : request.getPage() - 1; 
-		int offset = (page)* request.getPageSize();
+		int page = (request.getPage() - 1 < 0) ? 0 : request.getPage() - 1;
+		int offset = (page) * request.getPageSize();
 		List<Title> list = em.createQuery(q).setFirstResult(offset).setMaxResults(request.getPageSize())
 				.getResultList();
 		return list;

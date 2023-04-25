@@ -1,20 +1,15 @@
 package sk.itlearning.java5.rest.app;
 
-import javax.ws.rs.core.Response;
-
 import com.google.gson.Gson;
 
-import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.ws.rs.core.Response;
 
 public class ErrorResponse {
 
-	@Schema(description = "Simple error code")
 	private String code;
 
-	@Schema(description = "HTTP response status")
 	private int status;
 
-	@Schema(description = "Human readable error message")
 	private String message;
 
 	private ErrorResponse() {

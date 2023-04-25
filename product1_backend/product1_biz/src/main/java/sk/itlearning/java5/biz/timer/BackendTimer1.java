@@ -1,14 +1,11 @@
 package sk.itlearning.java5.biz.timer;
 
-import javax.annotation.PostConstruct;
-import javax.annotation.Resource;
-import javax.ejb.Singleton;
-import javax.ejb.Startup;
-import javax.ejb.Timeout;
-import javax.ejb.TimerService;
-import javax.inject.Inject;
-
-import sk.itlearning.java5.pers.service.TitleService;
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.Resource;
+import jakarta.ejb.Singleton;
+import jakarta.ejb.Startup;
+import jakarta.ejb.Timeout;
+import jakarta.ejb.TimerService;
 
 @Singleton
 @Startup
@@ -16,9 +13,6 @@ public class BackendTimer1 {
 
 	@Resource
 	private TimerService timerService;
-
-	@Inject
-	private TitleService titleService;
 
 	@PostConstruct
 	public void initialize() {
@@ -28,7 +22,6 @@ public class BackendTimer1 {
 	@Timeout
 	private void doBackendTask1() {
 		System.out.println("Starting the backend task 1 ...");
-		System.out.println(titleService);
 	}
 
 }

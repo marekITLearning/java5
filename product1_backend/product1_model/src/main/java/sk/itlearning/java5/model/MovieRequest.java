@@ -9,7 +9,7 @@ public class MovieRequest {
 	private String[] order;
 
 	private Boolean asc = Boolean.TRUE;
-	
+
 	private String title;
 
 	public Integer getPage() {

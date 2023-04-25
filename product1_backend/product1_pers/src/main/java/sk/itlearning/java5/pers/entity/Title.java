@@ -1,12 +1,9 @@
 package sk.itlearning.java5.pers.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
-@Schema(description = "Object to collect movie main information")
 public class Title {
 
 	public static String F_tconst = "tconst";
@@ -18,10 +15,8 @@ public class Title {
 	@Id
 	private String tconst;
 
-	@Schema(description = "Primary title is the main movie title as used publicly")
 	private String primarytitle;
 
-	@Schema(description = "Year of issue")
 	private Integer startyear;
 
 	public String getTconst() {
