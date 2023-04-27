@@ -18,6 +18,8 @@ public class Title {
 	private String primarytitle;
 
 	private Integer startyear;
+	
+	private Integer runtimeMinutes;
 
 	public String getTconst() {
 		return tconst;
@@ -41,6 +43,14 @@ public class Title {
 
 	public void setStartyear(Integer startyear) {
 		this.startyear = startyear;
+	}
+
+	public Integer getRuntimeMinutes() {
+		return runtimeMinutes;
+	}
+
+	public void setRuntimeMinutes(Integer runtimeMinutes) {
+		this.runtimeMinutes = runtimeMinutes;
 	}
 
 }
