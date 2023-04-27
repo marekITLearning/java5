@@ -55,9 +55,10 @@ const filter = ref('')
 
 const selected = ref([])
 
-const getData = function () {return getMovies(`{"title" : "${filter.value}"}`).then(r => rows.value = r.data)}
-
-console.log(getData())
+const getData = function () {
+  return getMovies(`{"title" : "${filter.value}"}`)
+  .then(r => rows.value = r.data)
+  .catch(() => console.log('error on getting data'))}
 
 const deleteSelected = function () {
   if (selected.value.length === 0) return
