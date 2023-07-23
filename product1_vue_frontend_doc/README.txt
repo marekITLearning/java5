@@ -1,9 +1,10 @@
 open VSCode
+npm install -g @vue/cli
 open terminal
 cd c:/devel/projects/java5
-npm init vue@latest product1_vue_frontend
+npm init vue@latest product1_vue_frontend_test
 follow next instructions until the project is created (add router and ESLint)
-open folder product1_vue_frontend
+open folder product1_vue_frontend_test
  (cd product1_vue_frontend)
 open terminal and run
 npm i
