@@ -63,7 +63,7 @@ Portions Copyright [2016-2022] [Payara Foundation and/or its affiliates]
 		<jdbc-connection-pool is-isolation-level-guaranteed="false" datasource-classname="org.postgresql.ds.PGConnectionPoolDataSource" name="PostgresPool" res-type="javax.sql.ConnectionPoolDataSource">
 		  <property name="URL" value="jdbc:postgresql://localhost:5432/imdb?useUnicode=true;characterEncoding=utf-8"></property>
 		  <property name="user" value="postgres"></property>
-		  <property name="password" value="postgres"></property>
+		  <property name="password" value="sa"></property>
 		</jdbc-connection-pool>
 		
 		<context-service description="context service" jndi-name="concurrent/__defaultContextService" object-type="system-all"></context-service>

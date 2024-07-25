@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search</h1>
+        <div class="form-group">
+            <label for="titleLike">Title Like:</label>
+            <input type="text" id="titleLike" placeholder="Enter title...">
+        </div>
+        <div class="form-group">
+            <label for="sortBy">Sort By:</label>
+            <input type="text" id="sortBy" placeholder="Enter field to sort by...">
+        </div>
+        <div class="form-group">
+            <label for="page">Page:</label>
+            <input type="number" id="page" value="0" min="0">
+        </div>
+        <div class="form-group">
+            <label for="pageSize">Page Size:</label>
+            <input type="number" id="pageSize" value="10" min="1" max="1000">
+        </div>
+        <button onclick="searchMovies()">Search</button>
+        <div class="results" id="results"></div>
+    </div>
+
+    <script>
+        function searchMovies() {
+            const titleLike = document.getElementById('titleLike').value;
+            const sortBy = document.getElementById('sortBy').value;
+            const page = parseInt(document.getElementById('page').value);
+            const pageSize = parseInt(document.getElementById('pageSize').value);
+
+            const request = {
+                titleLike: titleLike,
+                sortBy: sortBy,
+                page: page,
+                pageSize: pageSize
+            };
+
+            fetch('http://localhost:8081/restapp/api/movie', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(request)
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('results');
+                resultsDiv.innerHTML = '';
+                if (data.length === 0) {
+                    resultsDiv.innerHTML = '<p>No movies found.</p>';
+                } else {
+                    const ul = document.createElement('ul');
+                    data.forEach(movie => {
+                        const li = document.createElement('li');
+                        li.textContent = `Title: ${movie.primarytitle}  |  Start year: ${movie.startyear}`;
+                        ul.appendChild(li);
+                    });
+                    resultsDiv.appendChild(ul);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
+
